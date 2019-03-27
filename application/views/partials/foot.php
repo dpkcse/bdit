@@ -3,7 +3,7 @@
         <div class="row footer-widgets">
             
             <!-- Start Contact Widget -->
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="footer-widget contact-widget">
                     <h4>Contact info<span class="head-line"></span></h4>
                     <ul>
@@ -17,67 +17,8 @@
             </div>
             <!-- End Contact Widget -->
             
-            <!-- Start Flickr Widget -->  
-            <div class="col-md-3">
-                <div class="footer-widget flickr-widget">
-                    <h4>Flicker Feed<span class="head-line"></span></h4>
-                    <ul class="flickr-list">
-                        <li>
-                            <a href="#"><img alt="" src="images\flickr-01.jpeg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" src="images\flickr-02.jpeg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" src="images\flickr-03.jpeg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" src="images\flickr-04.jpeg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" src="images\flickr-05.jpeg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" src="images\flickr-06.jpeg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" src="images\flickr-07.jpeg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" src="images\flickr-08.jpeg"></a>
-                        </li>
-                        <li>
-                            <a href="#"><img alt="" src="images\flickr-09.jpeg"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Flickr Widget -->
-            
-            <!-- Start Twitter Widget -->
-            <div class="col-md-3">
-                <div class="footer-widget twitter-widget">
-                    <h4>Twitter Feed<span class="head-line"></span></h4>
-                    <ul>
-                        <li>
-                            <p><a href="#">@RoberdKS </a> Lorem ipsum dolor et, consectetur adipiscing eli.</p>
-                            <span>29 September 2013</span>
-                        </li>
-                        <li>
-                            <p><a href="#">@RoberdKS </a> Lorem ipsum dolor et, consectetur adipiscing eli.An Fusce eleifend aliquet nis application.</p>
-                            <span>26 September 2013</span>
-                        </li>
-                        <li>
-                            <p><a href="#">@RoberdKS </a> Lorem ipsum dolor et, consectetur adipiscing eli.</p>
-                            <span>29 September 2013</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Twitter Widget -->
-            
             <!-- Start Subscribe & Social Links Widget -->
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div class="footer-widget mail-subscribe-widget">
                     <h4>Get in touch<span class="head-line"></span></h4>
                     <p>Join our mailing list to stay up to date and get notices about our new releases!</p>

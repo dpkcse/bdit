@@ -10,7 +10,7 @@
     </div>
     
     <!-- Style Switcher -->
-    <div class="switcher-box">
+    <!-- <div class="switcher-box">
     	<a href="#" class="open-switcher show-switcher"><i class="icon-cog-1"></i></a>
         <h4>Style Switcher</h4>
         <span>12 Predefined Color Skins</span>
@@ -56,6 +56,6 @@
             <li><a href="#" class="bg13"></a></li>
             <li><a href="#" class="bg14"></a></li>
         </ul>
-    </div>
+    </div> -->
 </body>
 </html>

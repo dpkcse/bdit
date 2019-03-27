@@ -1,13 +1,4 @@
 /* CSS Document */
-
-/*
-	Theme Name: Venda
-	Description: Venda - Responsive Template
-	Version: 1.0
-	Author: ZoOm-Arts
-	Website: http://zoom-arts.com
-*/
-
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
 /* ------------------------------------------ */
@@ -25,14 +16,8 @@
 /*   12 - Plugins Styles 	  	   */
 
 
-
-
-
 @import url(../../../css.css);
 @import url(../../../css-1.css);
-
-
-
 
 
 /*------------------------------------------*/
@@ -276,7 +261,7 @@ input[type="submit"] {
 }
 
 .light-section .testimonials {
-	color: #aaa;
+	color: #444;
 }
 
 .light-section .testimonials .testimonial-content p {
@@ -395,7 +380,8 @@ header {
 }
 
 .top-bar {
-	background-color: #fff;
+	/* background-color: #fff; */
+	background-color: #e2e2e2;
 	border-bottom: 1px solid #f2f2f2;
 }
 
@@ -449,7 +435,8 @@ header {
 }
 
 .top-bar a {
-	color: #aaa;
+	/* color: #444; */
+	color: #444;
 }
 
 .top-bar .contact-details li {
@@ -466,7 +453,7 @@ header {
 }
 
 .top-bar .contact-details li a:before {
-	color: #aaa;
+	color: #444;
 }
 
 .top-bar .contact-details li:first-child a:before {
@@ -565,7 +552,8 @@ ul.social-list li:last-child a i {
 
 .navbar-brand {
 	position: relative;
-	padding: 27px 0;
+	/* padding: 27px 0; */
+	padding: 9px 0;
 	margin: 0!important;
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -591,7 +579,7 @@ ul.social-list li:last-child a i {
 }
 
 .navbar-default .navbar-nav > li > a {
-	color: #999;
+	color: #444;
 	display: block;
     font-size: 14px;
 	font-weight: 300;
@@ -668,7 +656,7 @@ ul.social-list li:last-child a i {
 
 .dropdown li a, .sup-dropdown li a {
     display: block;
-    color: #aaa;
+    color: #444;
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     padding: 9px 14px;
@@ -733,7 +721,7 @@ ul.social-list li:last-child a i {
 .show-search i {
 	font-size: 1.2em !important;
 	display: block;
-	color: #aaa;
+	color: #444;
 	width: 36px;
 	height: 36px;
 	border-radius: 2px;
@@ -841,7 +829,7 @@ ul.breadcrumbs li {
 	font-size: 13px;
 	font-weight: 300;
     margin-left: 3px;
-	color: #999;
+	color: #444;
 	float: left;
 }
 
@@ -871,7 +859,7 @@ ul.breadcrumbs li a {
 
 label {
 	font-size: 13px;
-	color: #aaa;
+	color: #444;
 	font-weight: 300;
 	cursor: pointer;
 }
@@ -958,7 +946,7 @@ input[type="submit"] {
 .error-page p {
     font-size: 22px;
     line-height: 28px;
-    color: #aaa;
+    color: #444;
     margin-bottom: 25px
 }
 
@@ -2808,7 +2796,7 @@ ul.icons-list li i {
 
 .team-member.modern .member-socail a i {
 	background-color: transparent;
-	color: #aaa;
+	color: #444;
 }
 
 .team-member.modern .member-socail a:hover i {
@@ -2986,7 +2974,7 @@ ul.icons-list li i {
 }
 
 .portfolio-item .portfolio-details .like-link i, .portfolio-item .portfolio-details .like-link span {
-	color: #aaa;
+	color: #444;
 	transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -3329,7 +3317,7 @@ ul.icons-list li i {
 }
 
 .blog-post.quote-post .qoute-box a {
-	color: #999;
+	color: #444;
 }
 
 .blog-post.quote-post .qoute-box h2 {
@@ -3839,11 +3827,11 @@ footer p {
 }
 
 footer a {
-	color: #aaa;
+	color: #444;
 }
 
 footer a:hover {
-	color: #aaa;
+	color: #444;
 	text-decoration: underline;
 }
 
@@ -3937,7 +3925,11 @@ footer a:hover {
 }
 
 .contact-widget {
-	background: url(../images/map.png) center bottom no-repeat;
+	/* background: url(../images/map.png) center bottom no-repeat; */
+	background: url(../images/map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
 }
 
 .contact-widget span {
@@ -5075,4 +5067,144 @@ ul.footer-nav li a:hover {
 }
 .switcher-box .open-switcher i {
 	display: none;
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.section_title_container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.section_title {
+    line-height: 1.2;
+}
+
+.section_subtitle {
+    line-height: 1.85;
+    margin-top: 14px;
+}
+
+p:last-of-type {
+    margin-bottom: 0;
+}
+
+.news_row {
+    margin-top: 55px;
+}
+
+.news_post_large_container {
+    padding-right: 30px;
+}
+
+.news_post_large {
+    width: 100%;
+}
+
+.news_post_image {
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.news_post_image img {
+    max-width: 100%;
+}
+
+.news_post_large_title {
+    margin-top: 23px;
+}
+
+.news_post_large_title a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #384158;
+    line-height: 1.4;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.news_post_meta {
+    margin-top: 11px;
+}
+
+.news_post_meta ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.news_post_meta ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #b5b8be;
+    text-transform: uppercase;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.news_post_text {
+    margin-top: 13px;
+}
+
+.news_post_link {
+    margin-top: 19px;
+}
+
+.news_post_link a {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #384158;
+    text-decoration: underline;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.news_posts_small {
+    margin-top: -6px;
+}
+
+.news_post_small_title a {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.55;
+    color: #384158;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.news_post_small:not(:last-child) {
+    padding-bottom: 31px;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.news_post_small:not(:first-child) {
+    padding-top: 29px;
+}
+
+.news {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #FFFFFF;
+}
+
+.client-item a img{
+	width: 160px;
+	height: 100px;
 }

@@ -487,7 +487,7 @@ $(document).ready(function($) {
 			if ( sy >= changeHeaderOn ) {
 				$('.top-bar').slideUp(300);
 				$("header").addClass("fixed-header");
-				$('.navbar-brand').css({ 'padding-top' : 19 + "px", 'padding-bottom' : 19 + "px" });
+				$('.navbar-brand').css({ 'padding-top' : 1 + "px", 'padding-bottom' : 1 + "px" });
 				
 				if (/iPhone|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 479 ){
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 0 + "px", 'padding-bottom' : 0 + "px" })
@@ -500,7 +500,7 @@ $(document).ready(function($) {
 			else {
 				$('.top-bar').slideDown(300);
 				$("header").removeClass("fixed-header");
-				$('.navbar-brand').css({ 'padding-top' : 27 + "px", 'padding-bottom' : 27 + "px" });
+				$('.navbar-brand').css({ 'padding-top' : 9 + "px", 'padding-bottom' : 9 + "px" });
 				
 				if (/iPhone|iPod|BlackBerry/i.test(navigator.userAgent) || $(window).width() < 479 ){
 					$('.navbar-default .navbar-nav > li > a').css({ 'padding-top' : 0 + "px", 'padding-bottom' : 0 + "px" })

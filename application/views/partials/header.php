@@ -5,7 +5,7 @@
 <head>
   
     <!-- Basic -->
-	<title>Vella | Home</title>
+	<title>Bangladesh IT Institute</title>
     
     <!-- Define Charset -->
 	<meta charset="utf-8">
@@ -14,11 +14,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <!-- Page Description and Author -->
-    <meta name="description" content="Vella - Responsive HTML5 Template">
-    <meta name="author" content="ZoOm Arts">
-    
+    <meta name="description" content="Bangladesh IT Institute (BIT Institute) is to provide international standard education in Bangladesh and thereby helping the society to build up a skilled workforce.BIT Institute has over 14 years experience in Computer Training and delivering education that will provide you with the highest quality support, training and qualifications. ">
+    <meta name="author" content="Bangladesh IT Institute">
+    <meta name="robots" content="index, follow" />
+    <meta name="og:title" property="og:title" content="Bangladesh IT Institute (BIT Institute) is to provide international standard education in Bangladesh and thereby helping the society to build up a skilled workforce.">
+
+    <link href="http://www.bditinstitute.com" rel="canonical">
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo base_url(); ?>Assets/images/favico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo base_url(); ?>Assets/images/favico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url(); ?>Assets/images/favico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url(); ?>Assets/images/favico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>Assets/images/favico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo base_url(); ?>Assets/images/favico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo base_url(); ?>Assets/images/favico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo base_url(); ?>Assets/images/favico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>Assets/images/favico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="<?php echo base_url(); ?>Assets/images/favico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>Assets/images/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url(); ?>Assets/images/favico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>Assets/images/favico/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo base_url(); ?>Assets/images/favico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="<?php echo base_url(); ?>Assets/images/favico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     
     <!-- Bootstrap CSS  -->

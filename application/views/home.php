@@ -24,106 +24,61 @@
         <div class="fullwidthbanner-container">
             <div class="fullwidthbanner">
                 <ul>
-                
-                    <!-- SLIDE 1 -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300">
-                        <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>Assets/images/slide-02-bg.jpeg" data-fullwidthcentering="on" alt="slidebg2" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-                        
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption uppercase big_font_size boldest_font_weight dark_font_color sft start" data-x="540" data-y="125" data-speed="300" data-start="1600" data-easing="easeOutExpo"><span class="accent-color">Solutions</span><br>that you need!
-                        </div>
-                        
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption medium_font_size regular_font_weight dark_font_color sfl start" data-x="540" data-y="208" data-speed="300" data-start="1900" data-easing="easeOutExpo">The best template to get you started
-                        </div>
-                        
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption mini_font_size light_font_weight gray_font_color sfr start" data-x="540" data-y="250" data-speed="300" data-start="2200" data-easing="easeOutExpo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br>accusantium doloremque laudantium, totam rem aperiam.
-                        </div>
-                        
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption sfb start" data-x="540" data-y="314" data-speed="300" data-start="2500" data-easing="easeOutExpo"><a href="#" class="tp-caption btn-system btn-large border-btn btn-gray">Purchase This Now</a>
-                        </div>
-                        
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption sfl start" data-x="180" data-y="bottom" data-speed="1000" data-start="1000" data-easing="Power1.easeOut"><img src="<?php echo base_url(); ?>Assets/images/slide-02-image-01.png" alt="">
-                        </div>
-                        
-                    </li>
                     
-                    <!-- SLIDE 2  -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300">
-                        <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>Assets/images/slide-03-bg.jpeg" data-fullwidthcentering="on" alt="slidebg3" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-                        
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption mini_font_size bold_font_weight dark_font_color gray_bg sfl start" data-x="left" data-y="110" data-speed="300" data-start="1600" data-easing="easeInOutExpo">Fully Responsive & Retina Ready
-                        </div>
-                        
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption mini_font_size bold_font_weight dark_font_color gray_bg sfr start" data-x="left" data-y="150" data-speed="300" data-start="1900" data-easing="easeInOutExpo">Built Twitter Bootstrap 3
-                        </div>
-                        
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption mini_font_size bold_font_weight dark_font_color gray_bg sfl start" data-x="left" data-y="190" data-speed="300" data-start="2200" data-easing="easeInOutExpo">Tons of Shortcodes
-                        </div>
-                        
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption  mini_font_size bold_font_weight dark_font_color gray_bg sfr start" data-x="left" data-y="230" data-speed="300" data-start="2500" data-easing="easeInOutExpo">Touchable Sliders
-                        </div>
-                        
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption mini_font_size bold_font_weight dark_font_color gray_bg sfl start" data-x="left" data-y="270" data-speed="300" data-start="2800" data-easing="easeInOutExpo">Wide and Boxed Layout
-                        </div>
-                        
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption mini_font_size bold_font_weight dark_font_color gray_bg sfr start" data-x="left" data-y="310" data-speed="300" data-start="3100" data-easing="easeInOutExpo">Built With HTML5 and CSS3
-                        </div>
-                        
-                        <!-- LAYER NR. 7 -->
-                        <div class="tp-caption sfr start" data-x="center" data-y="60" data-hoffset="100" data-speed="600" data-start="1000" data-easing="easeOutBack" style="z-index: 2"><img src="<?php echo base_url(); ?>Assets/images/slide-03-image-01.png" alt="">
-                        </div>
-                        
-                        <!-- LAYER NR. 8 -->
-                        <div class="tp-caption sfl start" data-x="right" data-y="70" data-hoffset="-100" data-speed="600" data-start="1300" data-easing="easeOutBack" style="z-index: 1"><img src="<?php echo base_url(); ?>Assets/images/slide-03-image-02.png" alt="">
-                        </div>
-                        
-                    </li>
-                    
-                    <!-- SLIDE 3  -->
+                    <!-- SLIDE 1  -->
                     <li data-transition="fade" data-slotamount="7" data-masterspeed="300">
                         <!-- MAIN IMAGE -->
                         <img src="<?php echo base_url(); ?>Assets/images/slide-01-bg.jpeg" data-fullwidthcentering="on" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
                         
                         <!-- LAYER NR. 1 -->
-                        <div class="tp-caption uppercase big_font_size boldest_font_weight dark_font_color sft start" data-x="center" data-y="140" data-speed="300" data-start="1000" data-easing="easeOutExpo">Powerful Theme
-                        </div>
-                        
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption medium_font_size regular_font_weight dark_font_color sfb start" data-x="center" data-y="182" data-speed="300" data-start="1300" data-easing="easeOutExpo">The Best Template to Get You Started
+                        <div class="tp-caption uppercase big_font_size boldest_font_weight dark_font_color sft start" data-x="center" data-y="140" data-speed="300" data-start="1000" data-easing="easeOutExpo"><span class="accent-color">Solutions that you need!</span>
                         </div>
                         
                         <!-- LAYER NR. 3 -->
-                        <div class="tp-caption small_font_size light_font_weight gray_font_color text-center sfb start" data-x="center" data-y="220" data-speed="300" data-start="1600" data-easing="easeOutExpo">Sed ut perspiciatis unde omnis iste natus error sit voluptatem<br>accusantium doloremque laudantium, totam rem aperiam.
-                        </div>
-                        
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption sfr start" data-x="center" data-y="292" data-hoffset="84" data-speed="600" data-start="2000" data-easing="easeOutExpo"><a href="#" class="btn-system btn-medium">Purchase This Now</a> 
+                        <div class="tp-caption small_font_size light_font_weight gray_font_color text-center sfb start" data-x="center" data-y="220" data-speed="300" data-start="1600" data-easing="easeOutExpo">Welcome to Bangladesh IT Institute
                         </div>
                         
                         <!-- LAYER NR. 5 -->
-                        <div class="tp-caption sfl start" data-x="center" data-y="292" data-hoffset="-84" data-speed="600" data-start="2000" data-easing="easeOutExpo"><a href="#" class="btn-system btn-medium btn-gray">See More Features</a>
+                        <div class="tp-caption sfl start" data-x="center" data-y="292" data-hoffset="-84" data-speed="600" data-start="2000" data-easing="easeOutExpo"><a href="#" class="btn-system btn-medium btn-gray" style="margin-left: 50%;">See Our Services</a>
                         </div>
                         
                         <!-- LAYER NR. 6 -->
-                        <div class="tp-caption customin start" data-x="880" data-y="30" data-speed="1600" data-start="2100" data-easing="Power1.easeOut" data-customin="x:300;y:-40;z:-400;rotationX:0;rotationY:0;rotationZ:-20;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
-                            <img src="<?php echo base_url(); ?>Assets/images/slide-01-image-02.png" alt="" style="width:193px; height: 231px;">
+                        <div class="tp-caption customin start" data-x="880" data-y="120" data-speed="1600" data-start="2100" data-easing="Power1.easeOut" data-customin="x:300;y:-40;z:-400;rotationX:0;rotationY:0;rotationZ:-20;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
+                            <img src="<?php echo base_url(); ?>Assets/images/logo1.png" alt="" style="width:193px;">
                         </div>
                         
                         <!-- LAYER NR. 7 -->
                         <div class="tp-caption customin start" data-x="140" data-y="120" data-speed="1400" data-start="2600" data-easing="Power1.easeOut" data-customin="x:-200;y:20;z:-500;rotationX:0;rotationY:0;rotationZ:10;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
-                            <img src="<?php echo base_url(); ?>Assets/images/slide-01-image-01.png" alt="" style="width:80px; height: 101px;">
+                            <img src="<?php echo base_url(); ?>Assets/images/logo2.png" alt="" style="width:193px;">
+                        </div>
+                        
+                    </li>
+
+                    <!-- SLIDE 1  -->
+                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300">
+                        <!-- MAIN IMAGE -->
+                        <img src="<?php echo base_url(); ?>Assets/images/slide-02-bg.jpeg" data-fullwidthcentering="on" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                        
+                        <!-- LAYER NR. 1 -->
+                        <div class="tp-caption uppercase big_font_size boldest_font_weight dark_font_color sft start" data-x="center" data-y="140" data-speed="300" data-start="1000" data-easing="easeOutExpo"><span class="accent-color">Exam Center</span>
+                        </div>
+                        
+                        <!-- LAYER NR. 3 -->
+                        <div class="tp-caption small_font_size light_font_weight gray_font_color text-center sfb start" data-x="center" data-y="220" data-speed="300" data-start="1600" data-easing="easeOutExpo">at Bangladesh IT Institute
+                        </div>
+                        
+                        <!-- LAYER NR. 5 -->
+                        <div class="tp-caption sfl start" data-x="center" data-y="292" data-hoffset="-84" data-speed="600" data-start="2000" data-easing="easeOutExpo"><a href="#" class="btn-system btn-medium btn-gray" style="margin-left: 50%;">Book your seat</a>
+                        </div>
+                        
+                        <!-- LAYER NR. 6 -->
+                        <div class="tp-caption customin start" data-x="880" data-y="120" data-speed="1600" data-start="2100" data-easing="Power1.easeOut" data-customin="x:300;y:-40;z:-400;rotationX:0;rotationY:0;rotationZ:-20;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
+                            <img src="<?php echo base_url(); ?>Assets/images/IGC.png" alt="" style="width:193px">
+                        </div>
+                        
+                        <!-- LAYER NR. 7 -->
+                        <div class="tp-caption customin start" data-x="140" data-y="120" data-speed="1400" data-start="2600" data-easing="Power1.easeOut" data-customin="x:-200;y:20;z:-500;rotationX:0;rotationY:0;rotationZ:10;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
+                            <img src="<?php echo base_url(); ?>Assets/images/Pearson.png" alt="" style="width:193px;">
                         </div>
                         
                     </li>
@@ -135,7 +90,7 @@
         
         <!-- THE SCRIPT INITIALISATION -->
         <!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+        <script type="text/javascript">
             var revapi;
             jQuery(document).ready(function() {
                 revapi = jQuery('.fullwidthbanner').revolution({
@@ -204,101 +159,77 @@
                 <div class="row">
                 
                     <!-- Start Service Icon 1 -->
-                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
+                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
                         <div class="service-icon">
                             <i class="icon-leaf-1 icon-medium"></i>
                         </div>
                         <div class="service-content">
-                            <h4>High Quality Theme</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
+                            <h4>ICT Training</h4>
+                            <p>Our training courses have been designed on modular bases.For more details please visit <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">training.bditinstitute.com</a></p>
                             
                         </div>
                     </div>
                     <!-- End Service Icon 1 -->
                     
                     <!-- Start Service Icon 2 -->
-                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
+                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
                         <div class="service-icon">
                             <i class="icon-desktop-2 icon-medium"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Full Responsive</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
+                            <h4>Higher Education – ATHE</h4>
+                            <p>For more details please visit  <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">bitibd.org</a></p>
                         </div>
                     </div>
                     <!-- End Service Icon 2 -->
                     
                     <!-- Start Service Icon 3 -->
-                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
+                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
                         <div class="service-icon">
-                            <i class="icon-droplet icon-medium"></i>
+                            <i class="icon-headphones icon-medium"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Retina Display Ready</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
+                            <h4>BITI Contact Centre</h4>
+                            <p>BITI offers a comprehensive set of services and solutions for Contact Centre Operations. <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
                         </div>
                     </div>
                     <!-- End Service Icon 3 -->
                     
                     <!-- Start Service Icon 4 -->
-                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="04">
+                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="04">
                         <div class="service-icon">
-                            <i class="icon-brush icon-medium"></i>
+                            <i class="icon-key icon-medium"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Clean Modern Code</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
+                            <h4>BITI Security System</h4>
+                            <p>BITI provides worldclass and groundbreaking integrated solutions and has invested in its people and products to protect a variety of clients and the client’s assets. <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
                         </div>
                     </div>
                     <!-- End Service Icon 4 -->
 
                     <!-- Start Service Icon 5 -->
-                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="05">
+                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="05">
                         <div class="service-icon">
                             <i class="icon-paper-plane icon-medium"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Fast & Light Theme</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
+                            <h4>Software Development</h4>
+                            <p>BITI success story is the outcome of its commitment to maintain a team of fully trained highly developed competent technical personnel <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
                         </div>
                     </div>
                     <!-- End Service Icon 5 -->
                     
                     <!-- Start Service Icon 6 -->
-                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="06">
+                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="06">
                         <div class="service-icon">
                             <i class="icon-css3 icon-medium"></i>
                         </div>
                         <div class="service-content">
-                            <h4>Css3 Transitions</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
+                            <h4>Data Processing</h4>
+                            <p>BITI is equipped with state-of-the-art scanners, high speed reliable servers, and hundreds of multi-tasking workstations housed in modern office buildings. <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
                         </div>
                     </div>
                     <!-- End Service Icon 6 -->
-                    
-                    <!-- Start Service Icon 7 -->
-                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="07">
-                        <div class="service-icon">
-                            <i class="icon-download-1 icon-medium"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4>Free Updates</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
-                        </div>
-                    </div>
-                    <!-- End Service Icon 7 -->
-                    
-                    <!-- Start Service Icon 8 -->
-                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="08">
-                        <div class="service-icon">
-                            <i class="icon-lifebuoy icon-medium"></i>
-                        </div>
-                        <div class="service-content">
-                            <h4>Help & Support</h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat Lorem pariatur <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
-                        </div>
-                    </div>
-                    <!-- End Service Icon 8 -->
                 
                 </div>
                 <!-- End Services Icons -->
@@ -307,32 +238,16 @@
         </div>
         <!-- End Full Width Section 1 -->  
         
-        
-        <!-- Start Full Width Section 2 -->
-        <div class="section" style="padding-top:60px; padding-bottom:0px; border-top:1px solid #eee; border-bottom:1px solid #eee; background: url(images/browser-section.jpeg) #f9f9f9;">
-            <div class="container">
-                
-                <!-- Vella Logo Image -->
-                <div class="text-center"><img data-animation="fadeInDown" data-animation-delay="01" alt="" src="<?php echo base_url(); ?>Assets/images/vella-pic.png"></div>
-
-                <!-- Vella Browser Image -->
-                <div class="text-center"><img data-animation="fadeInUp" data-animation-delay="02" alt="" src="<?php echo base_url(); ?>Assets/images/browser.png"></div>
-            
-            </div>
-        </div>
-        <!-- End Full Width Section 2 -->
-        
-        
         <!-- Start Full Width Section 3 -->
-        <div class="section" style="padding-top:50px; padding-bottom:25px; border-top:0; border-bottom:0; background:#fff;">
+        <div class="section" style="padding-top:50px; padding-bottom:25px; border-top:0; border-bottom:0; background:#eeeeee;">
             <div class="container">
             
                 <!-- Start Milestone Block 1 -->
                 <div class="milestone-block" data-animation="fadeIn" data-animation-delay="01">
-                    <div class="milestone-icon"><i class="icon-box-1"></i></div>
+                    <div class="milestone-icon"><i class="icon-laptop-1"></i></div>
                     <div class="milestone-right">
-                        <div class="milestone-number">482</div>
-                        <div class="milestone-text">Our Products</div>
+                        <div class="milestone-number">40</div>
+                        <div class="milestone-text">ICT Course</div>
                     </div>
                 </div>
                 <!-- End Milestone Block 1 -->
@@ -341,38 +256,38 @@
                 <div class="milestone-block" data-animation="fadeIn" data-animation-delay="02">
                     <div class="milestone-icon"><i class="icon-users-1"></i></div>
                     <div class="milestone-right">
-                        <div class="milestone-number">964</div>
-                        <div class="milestone-text">Our Customers</div>
+                        <div class="milestone-number">50</div>
+                        <div class="milestone-text">Back Office Support</div>
                     </div>
                 </div>
                 <!-- End Milestone Block 2 -->
                 
                 <!-- Start Milestone Block 3 -->
                 <div class="milestone-block" data-animation="fadeIn" data-animation-delay="03">
-                    <div class="milestone-icon"><i class="icon-brush"></i></div>
+                    <div class="milestone-icon"><i class="icon-smile"></i></div>
                     <div class="milestone-right">
-                        <div class="milestone-number">130</div>
-                        <div class="milestone-text">Wordpress Themes</div>
+                        <div class="milestone-number">800+</div>
+                        <div class="milestone-text">Happy Customers</div>
                     </div>
                 </div>
                 <!-- End Milestone Block 3 -->
                 
                 <!-- Start Milestone Block 4 -->
                 <div class="milestone-block" data-animation="fadeIn" data-animation-delay="04">
-                    <div class="milestone-icon"><i class="icon-download-1"></i></div>
+                    <div class="milestone-icon"><i class="icon-users-2"></i></div>
                     <div class="milestone-right">
-                        <div class="milestone-number">144</div>
-                        <div class="milestone-text">New Updates</div>
+                        <div class="milestone-number">285</div>
+                        <div class="milestone-text">Employee</div>
                     </div>
                 </div>
                 <!-- End Milestone Block 4 -->
                 
                 <!-- Start Milestone Block 5 -->
                 <div class="milestone-block" data-animation="fadeIn" data-animation-delay="05">
-                    <div class="milestone-icon"><i class="icon-twitter-2"></i></div>
+                    <div class="milestone-icon"><i class="icon-headphones-2"></i></div>
                     <div class="milestone-right">
-                        <div class="milestone-number">4000</div>
-                        <div class="milestone-text">Twitter Followers</div>
+                        <div class="milestone-number">247</div>
+                        <div class="milestone-text">Support Center</div>
                     </div>
                 </div>
                 <!-- End Milestone Block 5 -->
@@ -380,6 +295,93 @@
             </div>
         </div>
         <!-- End Full Width Section 3 -->
+        
+        <!-- Start Full Width Section 2 -->
+        <div class="section " style="padding-top:60px; padding-bottom: 60px; border-top:1px solid #eee; border-bottom:1px solid #eee; background: url(images/browser-section.jpeg) #f9f9f9;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="section_title_container text-center">
+                            <h1 class="section_title">Latest News</h1>
+                            <div class="section_subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida arcu. Vestibulum feugiat, sapien ultrices fermentum congue, quam velit venenatis sem</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row news_row">
+                    <div class="col-lg-7 news_col">
+                        
+                        <!-- News Post Large -->
+                        <div class="news_post_large_container">
+                            <div class="news_post_large">
+                                <div class="news_post_image"><img src="<?php echo base_url(); ?>Assets/images/news_1.jpg" alt=""></div>
+                                <div class="news_post_large_title"><a href="blog_single.html">Here’s What You Need to Know About Online Testing for the ACT and SAT</a></div>
+                                <div class="news_post_meta">
+                                    <ul>
+                                        <li><a href="#">admin</a></li>
+                                        <li><a href="#">november 11, 2017</a></li>
+                                    </ul>
+                                </div>
+                                <div class="news_post_text">
+                                    <p>Policy analysts generally agree on a need for reform, but not on which path policymakers should take. Can America learn anything from other nations...</p>
+                                </div>
+                                <div class="news_post_link"><a href="blog_single.html">read more</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 news_col">
+                        <div class="news_posts_small">
+
+                            <!-- News Posts Small -->
+                            <div class="news_post_small">
+                                <div class="news_post_small_title"><a href="blog_single.html">Home-based business insurance issue (Spring 2017 - 2018)</a></div>
+                                <div class="news_post_meta">
+                                    <ul>
+                                        <li><a href="#">admin</a></li>
+                                        <li><a href="#">november 11, 2017</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- News Posts Small -->
+                            <div class="news_post_small">
+                                <div class="news_post_small_title"><a href="blog_single.html">2018 Fall Issue: Credit Card Comparison Site Survey (Summer 2018)</a></div>
+                                <div class="news_post_meta">
+                                    <ul>
+                                        <li><a href="#">admin</a></li>
+                                        <li><a href="#">november 11, 2017</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- News Posts Small -->
+                            <div class="news_post_small">
+                                <div class="news_post_small_title"><a href="blog_single.html">Cuentas de cheques gratuitas una encuesta de Consumer Action</a></div>
+                                <div class="news_post_meta">
+                                    <ul>
+                                        <li><a href="#">admin</a></li>
+                                        <li><a href="#">november 11, 2017</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- News Posts Small -->
+                            <div class="news_post_small">
+                                <div class="news_post_small_title"><a href="blog_single.html">Troubled borrowers have fewer repayment or forgiveness options</a></div>
+                                <div class="news_post_meta">
+                                    <ul>
+                                        <li><a href="#">admin</a></li>
+                                        <li><a href="#">november 11, 2017</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Full Width Section 2 -->
         
         
         <!-- Start Full Width Section 4 -->
@@ -393,12 +395,9 @@
                     <h1 class="fittext wite-text uppercase tlt">
                         <span class="texts">
                             <span>Modern</span>
-                            <span>Clean</span>
-                            <span>Awesome</span>
-                            <span>Cool</span>
-                            <span>Great</span>
+                            <span>Professional</span>
                         </span>
-                        Vella Template is Ready for <br>Business, Agency <strong>or</strong> Creative Portfolios
+                        BITI is Ready for <br>Business, Agency <strong>or</strong> Creative Portfolios
                     </h1>
                     <!-- End Animations Text -->
                     
@@ -406,8 +405,8 @@
                     <div class="hr1" style="margin-bottom:32px;"></div>
                     
                     <!-- Start Buttons -->
-                    <a href="#" class="btn-system btn-large border-btn btn-wite"><i class="icon-feather"></i> Check Out Features</a>
-                    <a href="#" class="btn-system btn-large btn-wite"><i class="icon-download-3"></i> Purchase This Now</a>
+                    <a href="#" class="btn-system btn-large border-btn btn-wite"><i class="icon-feather"></i> Check Out Services</a>
+                    <a href="#" class="btn-system btn-large btn-wite"><i class="icon-download-3"></i> Contact Us</a>
                     
                 </div>
                 <!-- End Section Content -->
@@ -668,270 +667,81 @@
         </div>
         <!-- End Full Width Section 5 -->
         
-        
-        <!-- Start Full Width Section 6 -->
-        <div class="section bg-parallax light-section" style="padding-top:80px; padding-bottom:80px; border-top:0; border-bottom:0; background: url(images/testimonials-bg.jpeg);">
-            <div class="container">
-            
-                <!-- Start Testimonials Carousel -->
-                <div class="testimonials-carousel">
-                    <!-- Testimonial 1 -->
-                    <div class="testimonials item">
-                        <div class="testimonial-content">
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
-                        </div>
-                        <div class="testimonial-author"><span>John Doe</span> - Customer</div>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="testimonials item">
-                        <div class="testimonial-content">
-                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                        </div>
-                        <div class="testimonial-author"><span>John Doe</span> - Customer</div>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div class="testimonials item">
-                        <div class="testimonial-content">
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
-                        <div class="testimonial-author"><span>John Doe</span> - Customer</div>
-                    </div>
-                </div>
-                <!-- End Testimonials Carousel -->	
-            
-            </div>
-        </div>
-        <!-- End Full Width Section 5 -->
-
-
         <!-- Start Full Width Section 7 -->
         <div class="section" style="padding-top:60px; padding-bottom:40px; border-top:1px solid #eee; border-bottom:1px solid #eee; background:#fff;">
             <div class="container">
             
                 <!-- Start Big Heading -->
                 <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
-                    <p class="title-desc">We Make Your Smile</p>
-                    <h1>Our Great <strong>Team</strong></h1>
+                    <!-- <p class="title-desc">We Make Your Smile</p> -->
+                    <h1>Our Well <strong>Wishers</strong></h1>
                 </div>
                 <!-- End Big Heading -->
                 
-                <!-- Some Text -->
-                <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <span class="accent-color sh-tooltip" data-placement="right" title="Simple Tooltip">doloremque laudantium</span>, totam rem aperiam, eaque ipsa quae ab illo inventore<br> veritatis et quasi <span class="accent-color sh-tooltip" data-placement="bottom" title="Simple Tooltip">architecto</span> beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
-                
                 <!-- Divider -->
-                <div class="hr1" style="margin-bottom:35px;"></div>
-                
-                <!-- Start Team Members -->
-                <div class="row">
-                
-                    <!-- Start Memebr 1 -->
-                    <div class="col-md-3" data-animation="fadeIn" data-animation-delay="03">
-                        <div class="team-member modern">
-                            <!-- Memebr Photo, Name & Position -->
-                            <div class="member-photo">
-                                <img alt="" src="<?php echo base_url(); ?>Assets/images/member-01.jpeg">
-                                <div class="member-name">John Doe <span>Developer</span></div>
-                            </div>
-                            <!-- Memebr Words -->
-                            <div class="member-info">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
-                            </div>
-                            <!-- Start Progress Bar 1 -->
-                            <div class="progress-label">Photoshop</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="96%" data-appear-animation-delay="400">
-                                <span class="percentage">96%</span>
-                                </div>
-                            </div>
-                            <!-- Start Progress Bar 2 -->
-                            <div class="progress-label">Logo Design</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="88%" data-appear-animation-delay="800">
-                                <span class="percentage">88%</span>
-                                </div>
-                            </div>
-                            <!-- Start Progress Bar 3 -->
-                            <div class="progress-label">Vectors Design</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="100%" data-appear-animation-delay="1200">
-                                <span class="percentage">100%</span>
-                                </div>
-                            </div>
-                            <!-- Memebr Social Links -->
-                            <div class="member-socail">
-                                <a class="twitter" href="#"><i class="icon-twitter-2"></i></a>
-                                <a class="gplus" href="#"><i class="icon-gplus"></i></a>
-                                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                <a class="flickr" href="#"><i class="icon-flickr-1"></i></a>
-                                <a class="mail" href="#"><i class="icon-mail-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Memebr 1 -->
+                <div class="hr1" style="margin-bottom:50px;"></div>
+                  
+                <!-- Start Clients Carousel -->
+                <div class="our-clients">
                     
-                    <!-- Start Memebr 2 -->
-                    <div class="col-md-3" data-animation="fadeIn" data-animation-delay="04">
-                        <div class="team-member modern">
-                            <!-- Memebr Photo, Name & Position -->
-                            <div class="member-photo">
-                                <img alt="" src="<?php echo base_url(); ?>Assets/images/member-02.jpeg">
-                                <div class="member-name">Silly Sally <span>Developer</span></div>
-                            </div>
-                            <!-- Memebr Words -->
-                            <div class="member-info">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
-                            </div>
-                            <!-- Start Progress Bar 1 -->
-                            <div class="progress-label">Photoshop</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="98%" data-appear-animation-delay="400">
-                                <span class="percentage">98%</span>
-                                </div>
-                            </div>
-                            <!-- Start Progress Bar 2 -->
-                            <div class="progress-label">Logo Design</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="92%" data-appear-animation-delay="800">
-                                <span class="percentage">92%</span>
-                                </div>
-                            </div>
-                            <!-- Start Progress Bar 3 -->
-                            <div class="progress-label">Vectors Design</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="80%" data-appear-animation-delay="1200">
-                                <span class="percentage">80%</span>
-                                </div>
-                            </div>
-                            <!-- Memebr Social Links -->
-                            <div class="member-socail">
-                                <a class="facebook" href="#"><i class="icon-facebook"></i></a>
-                                <a class="gplus" href="#"><i class="icon-gplus"></i></a>
-                                <a class="dribbble" href="#"><i class="icon-dribbble-2"></i></a>
-                                <a class="flickr" href="#"><i class="icon-flickr-1"></i></a>
-                                <a class="instagramm" href="#"><i class="icon-instagramm"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Memebr 2 -->
+                    <!-- Classic Heading -->
+                    <!-- <h4 class="classic-title"><span>Our Happy Clients</span></h4> -->
                     
-                    <!-- Start Memebr 3 -->
-                    <div class="col-md-3" data-animation="fadeIn" data-animation-delay="05">
-                        <div class="team-member modern">
-                            <!-- Memebr Photo, Name & Position -->
-                            <div class="member-photo">
-                                <img alt="" src="<?php echo base_url(); ?>Assets/images/member-03.jpeg">
-                                <div class="member-name">Chris John <span>Developer</span></div>
-                            </div>
-                            <!-- Memebr Words -->
-                            <div class="member-info">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
-                            </div>
-                            <!-- Start Progress Bar 1 -->
-                            <div class="progress-label">Photoshop</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="96%" data-appear-animation-delay="400">
-                                <span class="percentage">96%</span>
-                                </div>
-                            </div>
-                            <!-- Start Progress Bar 2 -->
-                            <div class="progress-label">Logo Design</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="94%" data-appear-animation-delay="800">
-                                <span class="percentage">94%</span>
-                                </div>
-                            </div>
-                            <!-- Start Progress Bar 3 -->
-                            <div class="progress-label">Vectors Design</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="90%" data-appear-animation-delay="1200">
-                                <span class="percentage">90%</span>
-                                </div>
-                            </div>
-                            <!-- Memebr Social Links -->
-                            <div class="member-socail">
-                                <a class="facebook" href="#"><i class="icon-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="icon-twitter-2"></i></a>
-                                <a class="dribbble" href="#"><i class="icon-dribbble-2"></i></a>
-                                <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                <a class="mail" href="#"><i class="icon-mail-2"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Memebr 3 -->
+                    <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="5">
                     
-                    <!-- Start Memebr 4 -->
-                    <div class="col-md-3" data-animation="fadeIn" data-animation-delay="06">
-                        <div class="team-member modern">
-                            <!-- Memebr Photo, Name & Position -->
-                            <div class="member-photo">
-                                <img alt="" src="<?php echo base_url(); ?>Assets/images/member-04.jpeg">
-                                <div class="member-name">Sara John <span>Developer</span></div>
-                            </div>
-                            <!-- Memebr Words -->
-                            <div class="member-info">
-                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.</p>
-                            </div>
-                            <!-- Start Progress Bar 1 -->
-                            <div class="progress-label">Photoshop</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="96%" data-appear-animation-delay="400">
-                                <span class="percentage">96%</span>
-                                </div>
-                            </div>
-                            <!-- Start Progress Bar 2 -->
-                            <div class="progress-label">Logo Design</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="85%" data-appear-animation-delay="800">
-                                <span class="percentage">85%</span>
-                                </div>
-                            </div>
-                            <!-- Start Progress Bar 3 -->
-                            <div class="progress-label">Vectors Design</div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-primary" data-progress-animation="100%" data-appear-animation-delay="1200">
-                                <span class="percentage">100%</span>
-                                </div>
-                            </div>
-                            <!-- Memebr Social Links -->
-                            <div class="member-socail">
-                                <a class="facebook" href="#"><i class="icon-facebook"></i></a>
-                                <a class="twitter" href="#"><i class="icon-twitter-2"></i></a>
-                                <a class="dribbble" href="#"><i class="icon-dribbble-2"></i></a>
-                                <a class="flickr" href="#"><i class="icon-flickr-1"></i></a>
-                                <a class="instagramm" href="#"><i class="icon-instagramm"></i></a>
-                            </div>
+                        <!-- Client 1 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c1.png" alt=""></a>
                         </div>
-                    </div>
-                    <!-- End Memebr 4 -->
-                
-                </div>
-                <!-- End Team Members -->
-                
-                <!-- Divider -->
-                <div class="hr1" style="margin-bottom:40px;"></div>
-                
-                <div class="text-center">
-                    <div class="pieChart" data-bar-color="#00afd1" data-bar-width="150" data-percent="95">
-                        <span>Web Design</span>
-                        <i class="icon-brush"></i>
-                    </div>
-                    <div class="pieChart" data-bar-color="#00afd1" data-bar-width="150" data-percent="92">
-                        <span>Web Developing</span>
-                        <i class="icon-laptop-1"></i>
-                    </div>
-                    <div class="pieChart" data-bar-color="#00afd1" data-bar-width="150" data-percent="85">
-                        <span>Marketing</span>
-                        <i class="icon-briefcase-1"></i>
-                    </div>
-                    <div class="pieChart" data-bar-color="#00afd1" data-bar-width="150" data-percent="94">
-                        <span>Brand Design</span>
-                        <i class="icon-leaf-2"></i>
-                    </div>
-                    <div class="pieChart" data-bar-color="#00afd1" data-bar-width="150" data-percent="96">
-                        <span>Support</span>
-                        <i class="icon-traffic-cone"></i>
+                        
+                        <!-- Client 2 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c2.png" alt=""></a>
+                        </div>
+                        
+                        <!-- Client 3 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c3.png" alt=""></a>
+                        </div>
+                        
+                        <!-- Client 4 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c4.png" alt=""></a>
+                        </div>
+                        
+                        <!-- Client 5 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c5.png" alt=""></a>
+                        </div>
+                        
+                        <!-- Client 6 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c6.png" alt=""></a>
+                        </div>
+                        
+                        <!-- Client 7 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c7.png" alt=""></a>
+                        </div>
+                        
+                        <!-- Client 8 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c8.png" alt=""></a>
+                        </div>
+                        
+                        <!-- Client 8 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c9.png" alt=""></a>
+                        </div>
+                        
+                        <!-- Client 8 -->
+                        <div class="client-item item">
+                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c10.png" alt=""></a>
+                        </div>
+                        
                     </div>
                 </div>
+                <!-- End Clients Carousel -->
             
             </div>
         </div>
