@@ -758,3 +758,9 @@
 </div>
 <!-- End Container -->
 <?php include('partials/footer.php'); ?>
+
+<script>
+jQuery(function(){
+   jQuery('#eventLaunch').click();
+});
+</script>
