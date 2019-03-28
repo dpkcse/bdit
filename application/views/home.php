@@ -20,131 +20,7 @@
     <!-- Start Home Slider -->
     <div id="slider">
     
-        <!-- START REVOLUTION SLIDER 3.1 rev5 fullwidth mode -->
-        <div class="fullwidthbanner-container">
-            <div class="fullwidthbanner">
-                <ul>
-                    
-                    <!-- SLIDE 1  -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300">
-                        <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>Assets/images/slide-01-bg.jpeg" data-fullwidthcentering="on" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-                        
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption uppercase big_font_size boldest_font_weight dark_font_color sft start" data-x="center" data-y="140" data-speed="300" data-start="1000" data-easing="easeOutExpo"><span class="accent-color">Solutions that you need!</span>
-                        </div>
-                        
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption small_font_size light_font_weight gray_font_color text-center sfb start" data-x="center" data-y="220" data-speed="300" data-start="1600" data-easing="easeOutExpo">Welcome to Bangladesh IT Institute
-                        </div>
-                        
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption sfl start" data-x="center" data-y="292" data-hoffset="-84" data-speed="600" data-start="2000" data-easing="easeOutExpo"><a href="#" class="btn-system btn-medium btn-gray" style="margin-left: 50%;">See Our Services</a>
-                        </div>
-                        
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption customin start" data-x="880" data-y="120" data-speed="1600" data-start="2100" data-easing="Power1.easeOut" data-customin="x:300;y:-40;z:-400;rotationX:0;rotationY:0;rotationZ:-20;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
-                            <img src="<?php echo base_url(); ?>Assets/images/logo1.png" alt="" style="width:193px;">
-                        </div>
-                        
-                        <!-- LAYER NR. 7 -->
-                        <div class="tp-caption customin start" data-x="140" data-y="120" data-speed="1400" data-start="2600" data-easing="Power1.easeOut" data-customin="x:-200;y:20;z:-500;rotationX:0;rotationY:0;rotationZ:10;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
-                            <img src="<?php echo base_url(); ?>Assets/images/logo2.png" alt="" style="width:193px;">
-                        </div>
-                        
-                    </li>
-
-                    <!-- SLIDE 1  -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="300">
-                        <!-- MAIN IMAGE -->
-                        <img src="<?php echo base_url(); ?>Assets/images/slide-02-bg.jpeg" data-fullwidthcentering="on" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-                        
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption uppercase big_font_size boldest_font_weight dark_font_color sft start" data-x="center" data-y="140" data-speed="300" data-start="1000" data-easing="easeOutExpo"><span class="accent-color">Exam Center</span>
-                        </div>
-                        
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption small_font_size light_font_weight gray_font_color text-center sfb start" data-x="center" data-y="220" data-speed="300" data-start="1600" data-easing="easeOutExpo">at Bangladesh IT Institute
-                        </div>
-                        
-                        <!-- LAYER NR. 5 -->
-                        <div class="tp-caption sfl start" data-x="center" data-y="292" data-hoffset="-84" data-speed="600" data-start="2000" data-easing="easeOutExpo"><a href="#" class="btn-system btn-medium btn-gray" style="margin-left: 50%;">Book your seat</a>
-                        </div>
-                        
-                        <!-- LAYER NR. 6 -->
-                        <div class="tp-caption customin start" data-x="880" data-y="120" data-speed="1600" data-start="2100" data-easing="Power1.easeOut" data-customin="x:300;y:-40;z:-400;rotationX:0;rotationY:0;rotationZ:-20;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
-                            <img src="<?php echo base_url(); ?>Assets/images/IGC.png" alt="" style="width:193px">
-                        </div>
-                        
-                        <!-- LAYER NR. 7 -->
-                        <div class="tp-caption customin start" data-x="140" data-y="120" data-speed="1400" data-start="2600" data-easing="Power1.easeOut" data-customin="x:-200;y:20;z:-500;rotationX:0;rotationY:0;rotationZ:10;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;">
-                            <img src="<?php echo base_url(); ?>Assets/images/Pearson.png" alt="" style="width:193px;">
-                        </div>
-                        
-                    </li>
-                    
-                </ul>
-                <div class="tp-bannertimer" style="visibility:hidden;"></div>
-            </div>
-        </div>
-        
-        <!-- THE SCRIPT INITIALISATION -->
-        <!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
-        <script type="text/javascript">
-            var revapi;
-            jQuery(document).ready(function() {
-                revapi = jQuery('.fullwidthbanner').revolution({
-                    
-                    delay:9000,
-                    startwidth:1140,
-                    startheight:450,
-                    hideThumbs:200,
-                    
-                    thumbWidth:100,
-                    thumbHeight:50,
-                    thumbAmount:3,
-                    
-                    navigationType:"none",
-                    navigationArrows:"solo",
-                    navigationStyle:"round",
-                    
-                    touchenabled:"on",
-                    onHoverStop:"on",
-                    
-                    navigationHAlign:"center",
-                    navigationVAlign:"bottom",
-                    navigationHOffset:0,
-                    navigationVOffset:20,
-
-                    soloArrowLeftHalign:"left",
-                    soloArrowLeftValign:"center",
-                    soloArrowLeftHOffset:20,
-                    soloArrowLeftVOffset:0,
-
-                    soloArrowRightHalign:"right",
-                    soloArrowRightValign:"center",
-                    soloArrowRightHOffset:20,
-                    soloArrowRightVOffset:0,
-                            
-                    shadow:0,
-                    fullWidth:"on",
-                    fullScreen:"off",
-                    lazyLoad:"on",
-
-                    stopLoop:"off",
-                    stopAfterLoops:-1,
-                    stopAtSlide:-1,
-
-                    shuffle:"off",
-                    
-                    hideSliderAtLimit:0,
-                    hideCaptionAtLimit:0,
-                    hideAllCaptionAtLilmit:0,
-                    startWithSlide:0,	
-                });
-            });
-        </script>
-                
+    
     </div>
     <!-- End Home Slider -->
     
@@ -680,67 +556,84 @@
                 
                 <!-- Divider -->
                 <div class="hr1" style="margin-bottom:50px;"></div>
-                  
+                
                 <!-- Start Clients Carousel -->
-                <div class="our-clients">
-                    
-                    <!-- Classic Heading -->
-                    <!-- <h4 class="classic-title"><span>Our Happy Clients</span></h4> -->
-                    
-                    <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="5">
-                    
-                        <!-- Client 1 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c1.png" alt=""></a>
-                        </div>
+                <div class="row">
+                <div class="col-lg-8">
+                    <div class="our-clients">
                         
-                        <!-- Client 2 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c2.png" alt=""></a>
-                        </div>
+                        <!-- Classic Heading -->
+                        <h4 class="classic-title"><span>Our Happy Clients</span></h4>
                         
-                        <!-- Client 3 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c3.png" alt=""></a>
-                        </div>
+                        <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="5">
                         
-                        <!-- Client 4 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c4.png" alt=""></a>
+                            <!-- Client 1 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c1.png" alt=""></a>
+                            </div>
+                            
+                            <!-- Client 2 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c2.png" alt=""></a>
+                            </div>
+                            
+                            <!-- Client 3 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c3.png" alt=""></a>
+                            </div>
+                            
+                            <!-- Client 4 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c4.png" alt=""></a>
+                            </div>
+                            
+                            <!-- Client 5 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c5.png" alt=""></a>
+                            </div>
+                            
+                            <!-- Client 6 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c6.png" alt=""></a>
+                            </div>
+                            
+                            <!-- Client 7 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c7.png" alt=""></a>
+                            </div>
+                            
+                            <!-- Client 8 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c8.png" alt=""></a>
+                            </div>
+                            
+                            
                         </div>
-                        
-                        <!-- Client 5 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c5.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 6 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c6.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 7 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c7.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 8 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c8.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 8 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c9.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 8 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c10.png" alt=""></a>
-                        </div>
-                        
                     </div>
                 </div>
+                <div class="col-lg-4">
+                    <div class="our-exam">
+                        
+                        <!-- Classic Heading -->
+                        <h4 class="classic-title"><span>Exam Center</span></h4>
+                        
+                        <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="2">
+                        
+                            <!-- Client 8 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c9.png" alt=""></a>
+                            </div>
+                            
+                            <!-- Client 8 -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c10.png" alt=""></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
                 <!-- End Clients Carousel -->
             
             </div>
@@ -759,8 +652,3 @@
 <!-- End Container -->
 <?php include('partials/footer.php'); ?>
 
-<script>
-jQuery(function(){
-   jQuery('#eventLaunch').click();
-});
-</script>

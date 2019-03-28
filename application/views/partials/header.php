@@ -69,10 +69,15 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>Assets/css/colors/red.css" title="red" media="screen">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>Assets/css/colors/sky-blue.css" title="sky-blue" media="screen">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>Assets/css/colors/yellow.css" title="yellow" media="screen">
-  
+    <!--    [Owl Carousel Css] -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>Assets/css/owl.carousel.min.css" rel="stylesheet">
     <!-- Fontello Icons CSS Styles  -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>Assets/css/fontello.css" media="screen">
     <!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+
+    <!--    [FontAwesome Css] -->
+
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>Assets/css/font-awesome.min.css" rel="stylesheet">
     
     
     <!-- Vella JS  -->
@@ -94,8 +99,10 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/mediaelement-and-player.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/jquery.themepunch.plugins.min.js"></script>
 	<script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/script.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/script.js"></script>
 
+    <!--    [Owl Carousel Js]-->
+    
 	<!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
