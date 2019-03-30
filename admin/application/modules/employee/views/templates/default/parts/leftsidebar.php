@@ -49,43 +49,6 @@
                     Admin Profile </a>
             </li>
             <li>
-                <a href = "#"><i class = "fa fa-dashboard fa-fw"></i> Projects <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="<?php echo site_url('Control'); ?>">Project Control</a>
-                        </li>
-                        <li>
-                            <a href="<?php echo site_url('Drawing'); ?>">Drawing Register</a>
-                        </li>
-                        <li>
-                            <a href="#">Project Planning <span class="fa arrow"></a>
-                            <ul class="nav nav-third-level">
-                                
-                                <li>
-                                    <a href="<?php echo site_url('Production'); ?>">Production</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo site_url('Delivery'); ?>">Delivery</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-            </li>
-            <li>
-                <a href = "#"><i class = "fa fa-dashboard fa-fw"></i> Reports <span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level">
-                        <li>
-                            <a href="<?php echo site_url('Status/Drawing'); ?>">Drawing</a>
-                        </li>
-                        <li>
-                            <a href="<?php echo site_url('Status/Production'); ?>">Prodution</a>
-                        </li>
-                        <li>
-                            <a href="<?php echo site_url('Status/Delivery'); ?>"> Delivery</a>
-                        </li>
-                    </ul>
-            </li>
-            <li>
                 <a href = "#"><i
                         class = "fa fa-dashboard fa-fw"></i>
                     Employee <span class="fa arrow"></span></a>

@@ -22,22 +22,22 @@
             <!-- Start Navigation List -->
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="active" href="index.html">Home</a>
+                    <a class="active" href="<?php echo base_url(); ?>">Home</a>
                 </li>
                 <li>
                     <a href="about.html">About Us</a>
                     <ul class="dropdown">
-                        <li><a href="about.html">About Company</a></li>
-                        <li><a href="services.html">Vision and Mission</a></li>
-                        <li><a href="right-sidebar.html">Why BIT Institute</a></li>
-                        <li><a href="left-sidebar.html">Message From Chairman</a></li>
-                        <li><a href="404.html">Message From CEO</a></li>
+                        <li><a href="<?php echo base_url(); ?>About/aboutCompany">About Company</a></li>
+                        <li><a href="<?php echo base_url(); ?>About/mission_vision">Vision and Mission</a></li>
+                        <li><a href="<?php echo base_url(); ?>About/why_bit_institute">Why BIT Institute</a></li>
+                        <li><a href="<?php echo base_url(); ?>About/message_from_chairman">Message From Chairman</a></li>
+                        <li><a href="<?php echo base_url(); ?>About/message_from_ceo">Message From CEO</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="about.html">Services</a>
                     <ul class="dropdown">
-                        <li><a href="about.html">ICT Training</a></li>
+                        <li><a href="<?php echo base_url(); ?>Course/ICT_Training">ICT Training</a></li>
                         <li><a href="services.html">Higher Education – ATHE</a></li>
                         <li><a href="right-sidebar.html">BITI Contact Centre</a></li>
                         <li><a href="left-sidebar.html">BITI Security System</a></li>
@@ -46,9 +46,9 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="portfolio-3.html">Partnership and Affiliation</a>
+                    <a href="<?php echo base_url(); ?>About/partnership_affiliation">Partnership and Affiliation</a>
                 </li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
             </ul>
             <!-- End Navigation List -->
         </div>

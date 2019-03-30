@@ -7,11 +7,12 @@
                 <div class="footer-widget contact-widget">
                     <h4>Contact info<span class="head-line"></span></h4>
                     <ul>
-                        <li><span>Address:</span> 1234 Street Name, City Name, Egypt</li>
-                        <li><span>Phone Number:</span> +01 234 567 890</li>
-                        <li><span>Fax Number:</span> +01 234 567 890</li>
-                        <li><span>Email:</span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a0c3cfcdd0c1ced9e0c3cfcdd0c1ced98ec3cfcd">[email&#160;protected]</a></li>
-                        <li><span>Website:</span> www.yourdomain.com</li>
+                        <li><span> Corporate Office:</span> Opolok, 2nd & 3rd Floor 225, Senpara Parbota Mirpur-10, Dhaka-1216</li>
+                        <li><span> Jessore Office: </span> Sheikh Hasina Software Technology Park, Level 9, Jessore</li>
+
+                        <li><span>Phone Number:</span>  +88-02-9004200, +88-02-9004201</li>
+                        <li><span>Email:</span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__"> info@bditinstitute.com</a></li>
+                        <li><span>Website:</span> www.bditinstitute.com</li>
                     </ul>
                 </div>
             </div>

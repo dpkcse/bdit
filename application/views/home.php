@@ -19,8 +19,23 @@
     
     <!-- Start Home Slider -->
     <div id="slider">
-    
-    
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                    <li><img src="<?php echo base_url(); ?>Assets/images/slide-bg-1.jpeg" alt="WE ARE VERY PASSIONATE FOR YOUR BUSINESS" title="WE ARE VERY PASSIONATE FOR YOUR BUSINESS" id="wows1_0"/></li>
+                    <li><a href="http://wowslider.net"><img src="<?php echo base_url(); ?>Assets/images/slide-bg-2.jpeg" alt="javascript slider" title="OUR AWESOME TEAM  READY TO HELP YOU" id="wows1_1"/></a></li>
+                    <li><img src="<?php echo base_url(); ?>Assets/images/slide-bg-3.jpeg" alt="slide-bg-3" title="slide-bg-3" id="wows1_2"/></li>
+                </ul>
+            </div>
+            <div class="ws_bullets">
+                <div>
+                    <a href="#" title="WE ARE VERY PASSIONATE FOR YOUR BUSINESS"><span><img src="<?php echo base_url(); ?>Assets/images/slide-bg-1.jpeg" alt="WE ARE VERY PASSIONATE FOR YOUR BUSINESS"/>1</span></a>
+                    <a href="#" title="OUR AWESOME TEAM  READY TO HELP YOU"><span><img src="<?php echo base_url(); ?>Assets/images/slide-bg-2.jpeg" alt="OUR AWESOME TEAM  READY TO HELP YOU"/>2</span></a>
+                    <a href="#" title="slide-bg-3"><span><img src="<?php echo base_url(); ?>Assets/images/slide-bg-3.jpeg" alt="slide-bg-3"/>3</span></a>
+                </div>
+            </div>
+            <div class="ws_shadow"></div>
+        </div>
     </div>
     <!-- End Home Slider -->
     
@@ -651,4 +666,7 @@
 </div>
 <!-- End Container -->
 <?php include('partials/footer.php'); ?>
+
+<script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/wowslider.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/wowscript.js"></script>
 
