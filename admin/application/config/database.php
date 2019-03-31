@@ -6,10 +6,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'building_manufacturer',
+	'hostname' => 'db4free.net',
+	'username' => 'bdit007',
+	'password' => '*Dipok44',
+	'database' => 'bdit007',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
