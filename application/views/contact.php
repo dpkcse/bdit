@@ -22,7 +22,7 @@
       
 	<!-- Start Map -->
 	<div id="map">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7300.75098074795!2d90.36701683275699!3d23.80524320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d23729139b%3A0xd032c8e41b63156a!2sBangladesh+IT+Institute!5e0!3m2!1sen!2sbd!4v1553854477535!5m2!1sen!2sbd" width="1366" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7300.75098074795!2d90.36701683275699!3d23.80524320000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c0d23729139b%3A0xd032c8e41b63156a!2sBangladesh+IT+Institute!5e0!3m2!1sen!2sbd!4v1553854477535!5m2!1sen!2sbd" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
 	
 	<!-- End Map --> 
