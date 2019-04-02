@@ -300,8 +300,6 @@
 							$('.nav-tabs a[href="#home"]').tab('show');
 						}
 					}
-
-					
 				}
 			});
     	}

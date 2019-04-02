@@ -19,7 +19,7 @@
                     <i class = "fa fa-dashboard fa-fw"></i> <span> Admin Profile </span></a>
             </li>
             <li>
-                <a href = "<?php echo site_url('Home'); ?>">
+                <a href = "<?php echo site_url('projects'); ?>">
                     <i class = "fa fa-dashboard fa-fw"></i> <span> Projects </span></a>
             </li>
             <li>
@@ -40,18 +40,50 @@
                 <!-- /input-group -->
             </li>
             <li>
-                <a href = "<?php echo site_url('Dashboard'); ?>"><i class = "fa fa-dashboard fa-fw"></i>
-                    Dashboard </a>
-            </li>
-            <li>
                 <a href = "<?php echo site_url('Home'); ?>"><i class = "fa fa-dashboard fa-fw"></i>
-                    Home Page</a>
-
+                    Dashboard </a>
             </li>
             <li>
                 <a href = "<?php echo site_url('dashboard/admin_profile'); ?>"><i
                         class = "fa fa-dashboard fa-fw"></i>
                     Admin Profile </a>
+            </li>
+            <li>
+                <a href = "#"><i class = "fa fa-dashboard fa-fw"></i> Projects <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo site_url('Control'); ?>">Project Control</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('Drawing'); ?>">Drawing Register</a>
+                        </li>
+                        <li>
+                            <a href="#">Project Planning <span class="fa arrow"></a>
+                            <ul class="nav nav-third-level">
+                                
+                                <li>
+                                    <a href="<?php echo site_url('Production'); ?>">Production</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('Delivery'); ?>">Delivery</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </li>
+            <li>
+                <a href = "#"><i class = "fa fa-dashboard fa-fw"></i> Reports <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo site_url('Status/Drawing'); ?>">Drawing</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('Status/Production'); ?>">Prodution</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo site_url('Status/Delivery'); ?>"> Delivery</a>
+                        </li>
+                    </ul>
             </li>
             <li>
                 <a href = "#"><i

@@ -13,7 +13,8 @@ $route['Drawing'] = "projects/ProjectPanel";
 $route['Control'] = "projects";
 $route['Stuff'] = "employee";
 $route['StuffControl'] = "employee/employeePanel";
-$route['Home'] = "dashboard";
+$route['Home'] = "home";
+$route['Dashboard'] = "dashboard";
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
