@@ -14,6 +14,7 @@ $route['Control'] = "projects";
 $route['Stuff'] = "employee";
 $route['StuffControl'] = "employee/employeePanel";
 $route['Home'] = "home";
+$route['News'] = "home/news";
 $route['Dashboard'] = "dashboard";
 
 $route['404_override'] = '';

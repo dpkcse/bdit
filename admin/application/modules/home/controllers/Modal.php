@@ -27,7 +27,7 @@ class Modal extends CI_Controller {
 		$page_data['param2']		=	$param2;
 		$page_data['param3']		=	$param3;
 		//$page_data['system_name']		=	"Manufacturing System";
-		$this->load->view( 'projects/'.$page_name.'.php' ,$page_data);
+		$this->load->view( 'home/'.$page_name.'.php' ,$page_data);
 	}
 }
 

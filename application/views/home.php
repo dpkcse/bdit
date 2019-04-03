@@ -22,16 +22,27 @@
         <div id="wowslider-container1">
             <div class="ws_images">
                 <ul>
-                    <li><img src="<?php echo base_url(); ?>Assets/images/slide-bg-1.jpeg" alt="WE ARE VERY PASSIONATE FOR YOUR BUSINESS" title="WE ARE VERY PASSIONATE FOR YOUR BUSINESS" id="wows1_0"/></li>
-                    <li><a href="http://wowslider.net"><img src="<?php echo base_url(); ?>Assets/images/slide-bg-2.jpeg" alt="javascript slider" title="OUR AWESOME TEAM  READY TO HELP YOU" id="wows1_1"/></a></li>
-                    <li><img src="<?php echo base_url(); ?>Assets/images/slide-bg-3.jpeg" alt="slide-bg-3" title="slide-bg-3" id="wows1_2"/></li>
+                    <?php 
+                        if(count($banners) > 0){
+                            
+                            foreach($banners as $row):?>
+
+                                <li><img src="<?php echo base_url('admin/uploads/'.$row['image']); ?>" alt="<?php echo $row['heading']; ?>" title="<?php echo $row['heading']; ?>" id="wows1_<?php echo $row['id']; ?>"/></li>
+                                
+                            <?php endforeach;?>
+                    <?php } ?>
                 </ul>
             </div>
             <div class="ws_bullets">
                 <div>
-                    <a href="#" title="WE ARE VERY PASSIONATE FOR YOUR BUSINESS"><span><img src="<?php echo base_url(); ?>Assets/images/slide-bg-1.jpeg" alt="WE ARE VERY PASSIONATE FOR YOUR BUSINESS"/>1</span></a>
-                    <a href="#" title="OUR AWESOME TEAM  READY TO HELP YOU"><span><img src="<?php echo base_url(); ?>Assets/images/slide-bg-2.jpeg" alt="OUR AWESOME TEAM  READY TO HELP YOU"/>2</span></a>
-                    <a href="#" title="slide-bg-3"><span><img src="<?php echo base_url(); ?>Assets/images/slide-bg-3.jpeg" alt="slide-bg-3"/>3</span></a>
+                    <?php if(count($banners) > 0){
+                            
+                            foreach($banners as $row):?>
+
+                                <a href="<?php echo $row['link']; ?>" title="<?php echo $row['heading']; ?>"><span>1</span></a>
+
+                            <?php endforeach;?>
+                    <?php } ?>
                 </div>
             </div>
             <div class="ws_shadow"></div>
@@ -204,69 +215,37 @@
                         <!-- News Post Large -->
                         <div class="news_post_large_container">
                             <div class="news_post_large">
-                                <div class="news_post_image"><img src="<?php echo base_url(); ?>Assets/images/news_1.jpg" alt=""></div>
-                                <div class="news_post_large_title"><a href="blog_single.html">Here’s What You Need to Know About Online Testing for the ACT and SAT</a></div>
+                                <div class="news_post_image"><img style="width:623px;height:291px" id="postImg" src="<?php echo base_url(); ?>Assets/images/news_1.jpg" alt=""></div>
+                                <div class="news_post_large_title"><a herf="" id="postTitle">Here’s What You Need to Know About Online Testing for the ACT and SAT</a></div>
                                 <div class="news_post_meta">
                                     <ul>
-                                        <li><a href="#">admin</a></li>
-                                        <li><a href="#">november 11, 2017</a></li>
+                                        <li><a href="#" id="postDate">november 11, 2017</a></li>
                                     </ul>
                                 </div>
                                 <div class="news_post_text">
-                                    <p>Policy analysts generally agree on a need for reform, but not on which path policymakers should take. Can America learn anything from other nations...</p>
+                                    <p id="postDesc">Policy analysts generally agree on a need for reform, but not on which path policymakers should take. Can America learn anything from other nations...</p>
                                 </div>
-                                <div class="news_post_link"><a href="blog_single.html">read more</a></div>
+                                <div class="news_post_link"><a id="postReadmore" href="">read more</a></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-5 news_col">
                         <div class="news_posts_small">
+                            <?php if(count($news) > 0){
+                                foreach($news as $row):?>
 
-                            <!-- News Posts Small -->
-                            <div class="news_post_small">
-                                <div class="news_post_small_title"><a href="blog_single.html">Home-based business insurance issue (Spring 2017 - 2018)</a></div>
-                                <div class="news_post_meta">
-                                    <ul>
-                                        <li><a href="#">admin</a></li>
-                                        <li><a href="#">november 11, 2017</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                                    <div class="news_post_small">
+                                        <div id="post<?php echo $row['id']; ?>" class="news_post_small_title" onclick="getNews(event);" data-id="<?php echo $row['id']; ?>"><?php echo $row['title']; ?></div>
+                                        <div class="news_post_meta">
+                                            <ul>
+                                                <li><a href="#"><?php echo date("F j, Y", strtotime($row['publish_date'])); ?></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
 
-                            <!-- News Posts Small -->
-                            <div class="news_post_small">
-                                <div class="news_post_small_title"><a href="blog_single.html">2018 Fall Issue: Credit Card Comparison Site Survey (Summer 2018)</a></div>
-                                <div class="news_post_meta">
-                                    <ul>
-                                        <li><a href="#">admin</a></li>
-                                        <li><a href="#">november 11, 2017</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- News Posts Small -->
-                            <div class="news_post_small">
-                                <div class="news_post_small_title"><a href="blog_single.html">Cuentas de cheques gratuitas una encuesta de Consumer Action</a></div>
-                                <div class="news_post_meta">
-                                    <ul>
-                                        <li><a href="#">admin</a></li>
-                                        <li><a href="#">november 11, 2017</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- News Posts Small -->
-                            <div class="news_post_small">
-                                <div class="news_post_small_title"><a href="blog_single.html">Troubled borrowers have fewer repayment or forgiveness options</a></div>
-                                <div class="news_post_meta">
-                                    <ul>
-                                        <li><a href="#">admin</a></li>
-                                        <li><a href="#">november 11, 2017</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
+                                <?php endforeach;
+                            } ?>
                         </div>
                     </div>
                 </div>
@@ -669,4 +648,48 @@
 
 <script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/wowslider.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/wowscript.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/moment.min.js"></script>
+<script>
+var base_url = '<?php echo base_url(); ?>';
+$(document).ready(function(){
+    if($(".news_post_small_title").length>0){
+        $(".news_post_small_title").eq(0).trigger("click");
+    }
+});
+
+function getNews(event){
+    var id = $(event.target).attr('data-id');
+    $.ajax({
+        url: '<?php echo site_url();?>Home/getNews',
+        type: 'POST',
+        data: {
+            id: id
+        },
+        dataType: "json",
+        beforeSend: function () {
+            //console.log("Emptying");
+        },
+        success: function (response) {
+            var data_st = response.data;
+            $("#postImg").attr('src',base_url+'admin/uploads/'+data_st.image);
+            $("#postTitle").text(data_st.title);
+            $("#postDesc").text(data_st.description);
+            $("#postDate").text(moment(data_st.publish_date).format('LLLL'));
+            $("#postReadmore").attr('href',base_url+'Home/NewsDetail/'+data_st.id);
+            $("#postTitle").attr('href',base_url+'Home/NewsDetail/'+data_st.id);
+        },
+        complete: function(data_st)
+        {
+            
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            // Some code to debbug e.g.:               
+            console.log(jqXHR);
+            console.log(textStatus);
+            console.log(errorThrown);
+        }
+    });
+}
+
+</script>
 

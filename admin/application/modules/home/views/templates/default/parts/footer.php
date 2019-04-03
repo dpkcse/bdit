@@ -1,5 +1,4 @@
-<p class="text-footer">yafitech.com &copy;copyright 2016 Yafi Tech</p>
-
+<p class="text-footer">www.bditinstitute.com/ &copy;copyright 2019 Bangladesh IT Institute</p>
 
 <!-- Metis Menu Plugin JavaScript -->
 <script src="<?php echo base_url(); ?>assets/vendor/metisMenu/metisMenu.min.js"></script>
@@ -20,6 +19,7 @@
 <script src="<?php echo base_url(); ?>assets/js/bootbox.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/sweetalert2.min.js"></script>
 <script src="https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
+
 
 
 

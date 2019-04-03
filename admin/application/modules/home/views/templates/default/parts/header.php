@@ -32,6 +32,8 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap-datepicker.css"/>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/js/qtip2/jquery.qtip.min.css"/>
 
+
+
 <!-- jQuery -->
 <script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/qtip2/jquery.qtip.min.js"></script>

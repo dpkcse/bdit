@@ -10928,6 +10928,31 @@ div#event-gallery .item {
 }
 
 
+#postDesc{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 618px;
+    height: 20px;
+    display: inline-block;
+
+}
+
+.news_post_small_title{
+	font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #384158;
+    line-height: 1.4;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	cursor: pointer;
+}
+
+
 
 
 

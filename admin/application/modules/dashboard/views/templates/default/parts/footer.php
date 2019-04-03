@@ -14,9 +14,10 @@
 
 <!--        Include custom date time script-->
 <script src="<?php echo base_url(); ?>assets/dist/js/datetime.js"></script>
-<script src = "<?php echo base_url(); ?>assets/js/bootstrap-notify.min.js"></script>
+<script src="<?php echo base_url(); ?>assets/js/bootstrap-notify.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/dataTables.semanticui.min.js"></script>
 <script src="<?php echo base_url(); ?>assets/js/semantic.min.js"></script>
+
 
 <script>
     setTimeout(function () {
