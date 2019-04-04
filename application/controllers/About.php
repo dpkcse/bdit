@@ -20,36 +20,43 @@ class About extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('about');
+		$this->data['url'] = 'about';
+		$this->load->view('about',$this->data);
 	}
 
 	public function aboutCompany()
 	{
-		$this->load->view('about');
+		$this->data['url'] = 'about';
+		$this->load->view('about',$this->data);
 	}
 
 	public function mission_vision()
 	{
-		$this->load->view('missionvision');
+		$this->data['url'] = 'about';
+		$this->load->view('missionvision',$this->data);
 	}
 
 	public function why_bit_institute()
 	{
-		$this->load->view('why_bit_institute');
+		$this->data['url'] = 'about';
+		$this->load->view('why_bit_institute',$this->data);
 	}
 
 	public function message_from_chairman()
 	{
-		$this->load->view('message_from_chairman');
+		$this->data['url'] = 'about';
+		$this->load->view('message_from_chairman',$this->data);
 	}
 
 	public function message_from_ceo()
 	{
-		$this->load->view('message_from_ceo');
+		$this->data['url'] = 'about';
+		$this->load->view('message_from_ceo',$this->data);
 	}
 
 	public function partnership_affiliation()
 	{
-		$this->load->view('partnership_affiliation');
+		$this->data['url'] = 'partner';
+		$this->load->view('partnership_affiliation',$this->data);
 	}
 }

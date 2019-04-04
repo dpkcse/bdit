@@ -205,7 +205,7 @@
                     <div class="col">
                         <div class="section_title_container text-center">
                             <h1 class="section_title">Latest News</h1>
-                            <div class="section_subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida arcu. Vestibulum feugiat, sapien ultrices fermentum congue, quam velit venenatis sem</p></div>
+                            <div class="section_subtitle"><p>BITI offers a comprehensive set of services and solutions for Contact Centre Operations.</p></div>
                         </div>
                     </div>
                 </div>
@@ -230,22 +230,24 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-5 news_col">
-                        <div class="news_posts_small">
+                    <div class="col-lg-5 news_col news_marquee">
+                        <div class="news_posts_small newsTicker">
+                            <ul>
                             <?php if(count($news) > 0){
                                 foreach($news as $row):?>
-
-                                    <div class="news_post_small">
-                                        <div id="post<?php echo $row['id']; ?>" class="news_post_small_title" onclick="getNews(event);" data-id="<?php echo $row['id']; ?>"><?php echo $row['title']; ?></div>
-                                        <div class="news_post_meta">
-                                            <ul>
-                                                <li><a href="#"><?php echo date("F j, Y", strtotime($row['publish_date'])); ?></a></li>
-                                            </ul>
+                                    <li class="ne_li">
+                                        <div class="news_post_small">
+                                            <div id="post<?php echo $row['id']; ?>" class="news_post_small_title" onclick="getNews(<?php echo $row['id']; ?>);" data-id="<?php echo $row['id']; ?>"><?php echo $row['title']; ?></div>
+                                            <div class="news_post_meta">
+                                                <ul>
+                                                    <li><a href="#"><?php echo date("F j, Y", strtotime($row['publish_date'])); ?></a></li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                    </div>
-
+                                    </li>
                                 <?php endforeach;
                             } ?>
+                            <ul>
                         </div>
                     </div>
                 </div>
@@ -318,7 +320,7 @@
                 </div>
                 <!-- End Big Heading -->
                 
-                <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore<br> veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                <!-- <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore<br> veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p> -->
                 
                 <!-- Divider -->
                 <div class="hr1" style="margin-bottom:25px;"></div>
@@ -651,14 +653,24 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/moment.min.js"></script>
 <script>
 var base_url = '<?php echo base_url(); ?>';
+var newsArray = [];
 $(document).ready(function(){
     if($(".news_post_small_title").length>0){
         $(".news_post_small_title").eq(0).trigger("click");
     }
+
+    $('.news_post_small_title').each((k,v)=>{
+        if(newsArray.indexOf($(v).attr('data-id')) === -1){
+            newsArray.push($(v).attr('data-id'));
+        }
+    });
+
+    newsSticker();
 });
 
-function getNews(event){
-    var id = $(event.target).attr('data-id');
+var curNewsIndex = -1;
+
+function getNews(id){
     $.ajax({
         url: '<?php echo site_url();?>Home/getNews',
         type: 'POST',
@@ -672,9 +684,15 @@ function getNews(event){
         success: function (response) {
             var data_st = response.data;
             $("#postImg").attr('src',base_url+'admin/uploads/'+data_st.image);
+            
             $("#postTitle").text(data_st.title);
+
+            $(".news_post_small_title").css('color','#384158');
+            
+            $("#post"+id).css('color','#00afd1');
+
             $("#postDesc").text(data_st.description);
-            $("#postDate").text(moment(data_st.publish_date).format('LLLL'));
+            $("#postDate").text(moment(data_st.publish_date).format('LL'));
             $("#postReadmore").attr('href',base_url+'Home/NewsDetail/'+data_st.id);
             $("#postTitle").attr('href',base_url+'Home/NewsDetail/'+data_st.id);
         },
@@ -691,5 +709,27 @@ function getNews(event){
     });
 }
 
+</script>
+
+<script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/jquery.easy-ticker.js"></script>
+
+<script>
+
+function newsSticker(){
+    $('.newsTicker').easyTicker({
+        direction: 'up',
+        visible: 5,
+        interval: 10000,
+        easing: 'swing'
+    });
+
+    setInterval(function() {
+        ++curNewsIndex;
+        if (curNewsIndex >= newsArray.length) {
+            curNewsIndex = 0;
+        }
+        getNews(newsArray[curNewsIndex]);   // set new news item into the ticker
+    }, 10000);
+}
 </script>
 

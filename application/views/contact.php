@@ -78,16 +78,18 @@
 					<h4 class="classic-title"><span>Information</span></h4>
 					
 					<!-- Some Info -->
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+					<p style="font-weight: bold; font-size: 24px;">Bangladesh IT Institute.</p>
 					
 					<!-- Divider -->
 					<div class="hr1" style="margin-bottom:10px;"></div>
 					
 					<!-- Info - Icons List -->
 					<ul class="icons-list">
-						<li><i class="icon-location-1"></i> <strong>Address:</strong> 1234 Street Name, City Name, Egypt.</li>
-						<li><i class="icon-mail-1"></i> <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="89e0e7efe6c9f0e6fcfbeae6e4f9e8e7f0a7eae6e4">[email&#160;protected]</a></li>
-						<li><i class="icon-mobile-1"></i> <strong>Phone:</strong> +12 345 678 001</li>
+						<li><i class="icon-location-1"></i> <strong>Corporate Office:</strong> Opolok, 2nd & 3rd Floor 225, Senpara Parbota Mirpur-10, Dhaka-1216</li>
+						<li><i class="icon-location-1"></i> <strong>Jessore Office:</strong> Sheikh Hasina Software Technology Park, Level 9, Jessore</li>
+						
+						<li><i class="icon-mail-1"></i> <strong>Email:</strong> info@bditinstitute.com</li>
+						<li><i class="icon-mobile-1"></i> <strong>Phone:</strong> +88-02-9004200, +88-02-9004201</li>
 					</ul>
 					
 					<!-- Divider -->
@@ -98,9 +100,8 @@
 					
 					<!-- Info - List -->
 					<ul class="list-unstyled">
-						<li><i class="icon icon-time"></i> <strong>Monday - Friday</strong> - 9am to 5pm</li>
-						<li><i class="icon icon-time"></i> <strong>Saturday</strong> - 9am to 2pm</li>
-						<li><i class="icon icon-time"></i> <strong>Sunday</strong> - Closed</li>
+						<li><i class="icon icon-time"></i> <strong>Saturday - Thursday</strong> - 9am to 7pm</li>
+						<li><i class="icon icon-time"></i> <strong>Friday</strong> - Closed</li>
 					</ul>
 					
 				</div>

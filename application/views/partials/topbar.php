@@ -14,19 +14,13 @@
                 <!-- Start Social Links -->
                 <ul class="social-list">
                     <li>
-                        <a class="facebook sh-tooltip" data-placement="bottom" title="Facebook" href="#"><i class="icon-facebook-2"></i></a>
+                        <a class="facebook sh-tooltip" data-placement="bottom" title="Facebook"  href="https://www.facebook.com/bditinstitute.bd/" target="_BLANK"><i class="icon-facebook-2"></i></a>
                     </li>
                     <li>
-                        <a class="twitter sh-tooltip" data-placement="bottom" title="Twitter" href="#"><i class="icon-twitter-2"></i></a>
+                        <a class="twitter sh-tooltip" data-placement="bottom" title="Twitter" href="https://twitter.com/BangladeshITIn2" target="_BLANK"><i class="icon-twitter-2"></i></a>
                     </li>
                     <li>
-                        <a class="linkdin sh-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="icon-linkedin"></i></a>
-                    </li>
-                    <li>
-                        <a class="instgram sh-tooltip" data-placement="bottom" title="Instagram" href="#"><i class="icon-instagramm"></i></a>
-                    </li>
-                    <li>
-                        <a class="skype sh-tooltip" data-placement="bottom" title="Skype" href="#"><i class="icon-skype-2"></i></a>
+                        <a class="linkdin sh-tooltip" data-placement="bottom" title="Linkedin" href="https://www.linkedin.com/company/bitibd/" target="_BLANK"><i class="icon-linkedin"></i></a>
                     </li>
                 </ul>
                 <!-- End Social Links -->

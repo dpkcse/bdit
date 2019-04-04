@@ -6,7 +6,7 @@
                 <i class="icon-menu-1"></i>
             </button>
             <!-- End Toggle Nav Link For Mobiles -->
-            <a class="navbar-brand" href="index.html"><img alt="" src="<?php echo base_url(); ?>Assets/images/logo_bit200x60.png"></a>
+            <a class="navbar-brand" href="<?php echo base_url(); ?>"><img alt="" src="<?php echo base_url(); ?>Assets/images/logo_bit200x60.png"></a>
         </div>
         <div class="navbar-collapse collapse">
             <!-- Stat Search -->
@@ -22,10 +22,10 @@
             <!-- Start Navigation List -->
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="active" href="<?php echo base_url(); ?>">Home</a>
+                    <a class="<?php echo ($url == 'home' ? 'active':''); ?>" href="<?php echo base_url(); ?>">Home</a>
                 </li>
                 <li>
-                    <a href="about.html">About Us</a>
+                    <a href="<?php echo base_url(); ?>About" class="<?php echo ($url == 'about' ? 'active':''); ?>">About Us</a>
                     <ul class="dropdown">
                         <li><a href="<?php echo base_url(); ?>About/aboutCompany">About Company</a></li>
                         <li><a href="<?php echo base_url(); ?>About/mission_vision">Vision and Mission</a></li>
@@ -35,7 +35,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="about.html">Services</a>
+                    <a href="<?php echo base_url(); ?>Course" class="<?php echo ($url == 'course' ? 'active':''); ?>">Services</a>
                     <ul class="dropdown">
                         <li><a href="<?php echo base_url(); ?>Course/ICT_Training">ICT Training</a></li>
                         <li><a href="services.html">Higher Education – ATHE</a></li>
@@ -46,9 +46,9 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="<?php echo base_url(); ?>About/partnership_affiliation">Partnership and Affiliation</a>
+                    <a href="<?php echo base_url(); ?>About/partnership_affiliation"  class="<?php echo ($url == 'partner' ? 'active':''); ?>">Partnership and Affiliation</a>
                 </li>
-                <li><a href="<?php echo base_url(); ?>contact">Contact Us</a></li>
+                <li><a href="<?php echo base_url(); ?>contact"  class="<?php echo ($url == 'contact' ? 'active':''); ?>">Contact Us</a></li>
             </ul>
             <!-- End Navigation List -->
         </div>

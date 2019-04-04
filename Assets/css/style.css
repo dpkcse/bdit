@@ -10916,9 +10916,11 @@ div#event-gallery .item {
     color: #fff;
     margin-bottom: 15px;
 }
+
 .inner-header-caption ul.breadcrumb {
     background: none;
 }
+
 .page-banner .breadcrumb {
     padding: 8px 15px;
     margin-bottom: 20px;
@@ -10926,7 +10928,6 @@ div#event-gallery .item {
     background-color: #f5f5f5;
     border-radius: 4px;
 }
-
 
 #postDesc{
 	overflow: hidden;
@@ -10952,6 +10953,15 @@ div#event-gallery .item {
 	cursor: pointer;
 }
 
+.news_marquee{
+	height: 434px;
+	overflow-y: hidden;
+}
+
+.newsTicker .ne_li {
+	padding: 20px;
+	border-bottom: 1px dashed #ccc;
+}
 
 
 

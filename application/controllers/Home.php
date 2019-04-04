@@ -13,6 +13,7 @@ class Home extends CI_Controller {
 	
 	public function index()
 	{	
+        $this->data['url'] = 'home';
 		$this->data['banners'] = $this->db->get_where('banner',array('status =' => '0'))->result_array();
 		$this->data['news'] = $this->db->get_where('news',array('status =' => '0'))->result_array();
         $this->load->view('home',$this->data);
