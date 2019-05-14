@@ -39,11 +39,24 @@
                                             </td>
                                             <td class="center">
                                                 <div class="btn-group">
-                                                    <a href="javascript:void(0);" class="btn btn-sm btn-info" onclick="confirm_modal('<?php echo base_url();?>home/bannerAction/delete/<?php echo $row['id'];?>/banner');">
-                                                        <i class="entypo-trash"></i>
-                                                            <?php echo "Delete";?>
-                                                    </a>
-                                                    
+                                                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                        Action <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu dropdown-default pull-right" role="menu">
+                                                        <li>
+                                                            <a href="javascript:void(0);" onclick="showAjaxModal('<?php echo site_url();?>home/modal/popup/v_modal_slide_edit/<?php echo $row['id'];?>');">
+                                                                <i class="entypo-pencil"></i>
+                                                                    <?php echo "Edit";?>
+                                                                </a>
+                                                        </li>
+                                                        <li class="divider"></li>
+                                                        <li>
+                                                            <a href="javascript:void(0);" onclick="confirm_modal('<?php echo base_url();?>home/bannerAction/delete/<?php echo $row['id'];?>/banner');">
+                                                                <i class="entypo-trash"></i>
+                                                                    <?php echo "Delete";?>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </td>
                                         </tr>

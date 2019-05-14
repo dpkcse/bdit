@@ -16,9 +16,6 @@
 /*   12 - Plugins Styles 	  	   */
 
 
-@import url(../../../css.css);
-@import url(../../../css-1.css);
-
 
 /*------------------------------------------*/
 /*	     01 - General & Basic Styles
@@ -5594,15 +5591,16 @@ p:last-of-type {
   	-webkit-border-radius: 0 0.17em 0.17em 0;
   	border-radius: 0 0.17em 0.17em 0;
 }
+
 #wowslider-container1 a.ws_next > span:before {
-	content:'\e803';
+	content:'>';
 	display: block;
 	text-align: center;
 	line-height: 2.6em;
 }
 
 #wowslider-container1 a.ws_prev > span:before{
-	content:'\e802';
+	content:'<';
 	display: block;
 	text-align: center;
 	line-height: 2.6em;
@@ -5716,6 +5714,8 @@ p:last-of-type {
 	-webkit-border-radius: 0.4em;
 	-moz-border-radius: 0.4em;
 	border-radius: 0.4em;
+	text-shadow: 2px 2px 2px #000000;
+
 }
 #wowslider-container1 .ws_images > ul{
 	animation: wsBasic 12s infinite;

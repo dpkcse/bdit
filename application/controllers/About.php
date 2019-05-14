@@ -21,13 +21,16 @@ class About extends CI_Controller {
 	public function index()
 	{
 		$this->data['url'] = 'about';
-		$this->load->view('about',$this->data);
+		$this->data['services'] = $this->db->get_where('services',array('status =' => '0'))->result_array();
+        $this->data['clients'] = $this->db->get_where('clients',array('status =' => '0'))->result_array();
+       	$this->load->view('about',$this->data);
 	}
 
 	public function aboutCompany()
 	{
 		$this->data['url'] = 'about';
-		$this->load->view('about',$this->data);
+		$this->data['clients'] = $this->db->get_where('clients',array('status =' => '0'))->result_array();
+       	$this->load->view('about',$this->data);
 	}
 
 	public function mission_vision()
@@ -39,7 +42,8 @@ class About extends CI_Controller {
 	public function why_bit_institute()
 	{
 		$this->data['url'] = 'about';
-		$this->load->view('why_bit_institute',$this->data);
+		$this->data['clients'] = $this->db->get_where('clients',array('status =' => '0'))->result_array();
+       	$this->load->view('why_bit_institute',$this->data);
 	}
 
 	public function message_from_chairman()

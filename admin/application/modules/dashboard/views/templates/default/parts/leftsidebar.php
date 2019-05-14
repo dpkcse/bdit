@@ -16,7 +16,7 @@
                 <a href = "<?php echo site_url('Dashboard'); ?>"><i class = "fa fa-dashboard fa-fw"></i> Dashboard </a>
             </li>
             <li>
-            <a href = "#"><i class = "fa fa-dashboard fa-fw"></i> Home <span class="fa arrow"></span></a>
+                <a href = "#"><i class = "fa fa-dashboard fa-fw"></i> Home <span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
                         <a href="<?php echo site_url('Home'); ?>">Banner Management</a>
@@ -25,6 +25,22 @@
                         <a href="<?php echo site_url('News'); ?>">News Management</a>
                     </li>
                 </ul>
+            </li>
+
+            <li>
+                <a href = "<?php echo site_url('LatestWork'); ?>"><i class = "fa fa-dashboard fa-fw"></i> Latest Work </a>
+            </li>
+            <li>
+                <a href = "<?php echo site_url('Client'); ?>"><i class = "fa fa-dashboard fa-fw"></i> Client </a>
+            </li>
+            <li>
+                <a href = "<?php echo site_url('Service'); ?>"><i class = "fa fa-dashboard fa-fw"></i> Service </a>
+            </li>
+            <li>
+                <a href = "<?php echo site_url('Carrer'); ?>"><i class = "fa fa-dashboard fa-fw"></i> Carrer </a>
+            </li>
+            <li>
+                <a href = "<?php echo site_url('Applicant'); ?>"><i class = "fa fa-dashboard fa-fw"></i> Applicant </a>
             </li>
             <li>
                 <a href = "<?php echo site_url('dashboard/admin_profile'); ?>"><i class = "fa fa-dashboard fa-fw"></i> Admin Profile </a>

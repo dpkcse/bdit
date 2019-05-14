@@ -15,7 +15,10 @@ class Home extends CI_Controller {
 	{	
         $this->data['url'] = 'home';
 		$this->data['banners'] = $this->db->get_where('banner',array('status =' => '0'))->result_array();
-		$this->data['news'] = $this->db->get_where('news',array('status =' => '0'))->result_array();
+        $this->data['news'] = $this->db->get_where('news',array('status =' => '0'))->result_array();
+        $this->data['works'] = $this->db->get_where('work',array('status =' => '0','featured ='=>'0'))->result_array();
+        $this->data['clients'] = $this->db->get_where('clients',array('status =' => '0'))->result_array();
+        $this->data['services'] = $this->db->get_where('services',array('status =' => '0'))->result_array();
         $this->load->view('home',$this->data);
     }
     
@@ -28,4 +31,13 @@ class Home extends CI_Controller {
         header("Content-Type: application/json; charset=utf-8", true);
         echo json_encode($jsonData);
     }
+
+    public function news($id){
+        $this->data['url'] = 'home';
+        $this->data['news'] = $this->db->get_where('news',array('status =' => '0'))->result_array();
+        $this->data['singleNews'] = $this->db->get_where('news',array('id =' => $id))->result_array();
+        $this->load->view('news',$this->data);
+    }
+
+
 }

@@ -43,10 +43,18 @@
                         <li><a href="left-sidebar.html">BITI Security System</a></li>
                         <li><a href="404.html">Software Development</a></li>
                         <li><a href="404.html">Data Processing</a></li>
+                        <?php if(count($services) > 0){
+                            foreach($services as $row):?>
+                                <li><a href="<?php echo base_url(); ?>Service/<?php echo $row['slug']; ?>/<?php echo $row['id']; ?>"><?php echo $row['menu_name']; ?></a></li>
+                            <?php endforeach;
+                        } ?>
                     </ul>
                 </li>
                 <li>
                     <a href="<?php echo base_url(); ?>About/partnership_affiliation"  class="<?php echo ($url == 'partner' ? 'active':''); ?>">Partnership and Affiliation</a>
+                </li>
+                <li>
+                    <a href="<?php echo base_url(); ?>Carrer"  class="<?php echo ($url == 'carrer' ? 'active':''); ?>">Carrer</a>
                 </li>
                 <li><a href="<?php echo base_url(); ?>contact"  class="<?php echo ($url == 'contact' ? 'active':''); ?>">Contact Us</a></li>
             </ul>

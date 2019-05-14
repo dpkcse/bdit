@@ -181,47 +181,14 @@
                     <!-- Classic Heading -->
                     <h4 class="classic-title"><span>Our Happy Clients</span></h4>
                     
-                    <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="5">
+                    <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="6">
                     
-                        <!-- Client 1 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c1.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 2 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c2.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 3 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c3.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 4 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c4.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 5 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c5.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 6 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c6.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 7 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c7.png" alt=""></a>
-                        </div>
-                        
-                        <!-- Client 8 -->
-                        <div class="client-item item">
-                            <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c8.png" alt=""></a>
-                        </div>
+                        <?php if(count($clients) > 0){ foreach($clients as $row): ?>
+                            <!-- Client -->
+                            <div class="client-item item">
+                                <a href="#"><img src="<?php echo base_url(); ?>admin/uploads/<?php echo $row['image']; ?>" alt="<?php echo $row['title']; ?>"></a>
+                            </div>
+                        <?php  endforeach; } ?>
                         
                     </div>
                 </div>

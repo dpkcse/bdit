@@ -61,7 +61,7 @@
                 <div class="row">
                 
                     <!-- Start Service Icon 1 -->
-                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
+                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="01">
                         <div class="service-icon">
                             <i class="icon-leaf-1 icon-medium"></i>
                         </div>
@@ -74,7 +74,7 @@
                     <!-- End Service Icon 1 -->
                     
                     <!-- Start Service Icon 2 -->
-                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
+                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="02">
                         <div class="service-icon">
                             <i class="icon-desktop-2 icon-medium"></i>
                         </div>
@@ -86,7 +86,7 @@
                     <!-- End Service Icon 2 -->
                     
                     <!-- Start Service Icon 3 -->
-                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
+                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="03">
                         <div class="service-icon">
                             <i class="icon-headphones icon-medium"></i>
                         </div>
@@ -98,7 +98,7 @@
                     <!-- End Service Icon 3 -->
                     
                     <!-- Start Service Icon 4 -->
-                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="04">
+                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="04">
                         <div class="service-icon">
                             <i class="icon-key icon-medium"></i>
                         </div>
@@ -110,7 +110,7 @@
                     <!-- End Service Icon 4 -->
 
                     <!-- Start Service Icon 5 -->
-                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="05">
+                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="05">
                         <div class="service-icon">
                             <i class="icon-paper-plane icon-medium"></i>
                         </div>
@@ -122,13 +122,37 @@
                     <!-- End Service Icon 5 -->
                     
                     <!-- Start Service Icon 6 -->
-                    <div class="col-md-4 service-box service-center" data-animation="fadeIn" data-animation-delay="06">
+                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="06">
                         <div class="service-icon">
                             <i class="icon-css3 icon-medium"></i>
                         </div>
                         <div class="service-content">
                             <h4>Data Processing</h4>
                             <p>BITI is equipped with state-of-the-art scanners, high speed reliable servers, and hundreds of multi-tasking workstations housed in modern office buildings. <a title="Simple Tooltip" href="#" class="sh-tooltip" data-placement="left">Read More</a></p>
+                        </div>
+                    </div>
+                    <!-- End Service Icon 6 -->
+
+                    <!-- Start Service Icon 5 -->
+                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="05">
+                        <div class="service-icon">
+                            <i class="icon-mail icon-medium"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Bulk SMS Service</h4>
+                            <p>BITI provide Bulk SMS Service. <a title="Simple Tooltip" target="_blank" href="https://www.codagecorp.com/bulk-sms-bangladesh/" class="sh-tooltip" data-placement="left">Read More</a></p>
+                        </div>
+                    </div>
+                    <!-- End Service Icon 5 -->
+                    
+                    <!-- Start Service Icon 6 -->
+                    <div class="col-md-3 service-box service-center" data-animation="fadeIn" data-animation-delay="06">
+                        <div class="service-icon">
+                            <i class="icon-mobile icon-medium"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Mobile Balance Recharge</h4>
+                            <p>BITI provide Mobile Balance Recharge. <a title="Simple Tooltip" href="https://we-top-up.com/index.php" target="_blank" class="sh-tooltip" data-placement="left">Read More</a></p>
                         </div>
                     </div>
                     <!-- End Service Icon 6 -->
@@ -216,7 +240,7 @@
                         <div class="news_post_large_container">
                             <div class="news_post_large">
                                 <div class="news_post_image"><img style="width:623px;height:291px" id="postImg" src="<?php echo base_url(); ?>Assets/images/news_1.jpg" alt=""></div>
-                                <div class="news_post_large_title"><a herf="" id="postTitle">Here’s What You Need to Know About Online Testing for the ACT and SAT</a></div>
+                                <div class="news_post_large_title"><a herf="" id="postTitle"  target="_blank">Here’s What You Need to Know About Online Testing for the ACT and SAT</a></div>
                                 <div class="news_post_meta">
                                     <ul>
                                         <li><a href="#" id="postDate">november 11, 2017</a></li>
@@ -225,7 +249,7 @@
                                 <div class="news_post_text">
                                     <p id="postDesc">Policy analysts generally agree on a need for reform, but not on which path policymakers should take. Can America learn anything from other nations...</p>
                                 </div>
-                                <div class="news_post_link"><a id="postReadmore" href="">read more</a></div>
+                                <div class="news_post_link"><a id="postReadmore" href="" target="_blank">read more</a></div>
                             </div>
                         </div>
                     </div>
@@ -315,12 +339,11 @@
             
                 <!-- Start Big Heading -->
                 <div class="big-title text-center" data-animation="fadeInDown" data-animation-delay="01">
-                    <p class="title-desc">Showcase Your Work</p>
                     <h1>This is Our Latest <strong>Work</strong></h1>
                 </div>
                 <!-- End Big Heading -->
                 
-                <!-- <p class="text-center">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore<br> veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p> -->
+                <p class="text-center">BITI offers a comprehensive set of services and solutions for Contact Centre Operations.</p>
                 
                 <!-- Divider -->
                 <div class="hr1" style="margin-bottom:25px;"></div>
@@ -328,205 +351,64 @@
                 <!-- Start Recent Projects Carousel -->
                 <div class="full-width-recent-projects">
                     <div class="projects-carousel touch-carousel navigation-3">
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                            <div class="portfolio-border">
-                                <!-- Start Project Thumb -->
-                                <div class="portfolio-thumb">
-                                    <a class="lightbox" data-lightbox-type="ajax" href="https://vimeo.com/78468485">
-                                        <div class="thumb-overlay"><i class="icon-video-1"></i></div>
-                                        <img alt="" src="<?php echo base_url(); ?>Assets/images/portfolio-01.jpeg">
-                                    </a>
+                    <?php if(count($works) > 0){
+                        foreach($works as $row):
+                            if($row['type'] == 'vdo'){
+
+                                $vdoID = explode("/",$row['link']);
+                    ?>
+                                <!-- Start Project Item -->
+                                <div class="portfolio-item item">
+                                    <div class="portfolio-border">
+                                        <!-- Start Project Thumb -->
+                                        <div class="portfolio-thumb">
+                                            <a class="lightbox" data-lightbox-type="iframe"  href="<?php echo $row['link']; ?>">
+                                                <div class="thumb-overlay"><i class="icon-video-1"></i></div>
+                                                <img alt="" src="https://img.youtube.com/vi/<?php echo $vdoID[4]; ?>/0.jpg">
+                                            </a>
+                                        </div>
+                                        <!-- End Project Thumb -->
+                                        <!-- Start Project Details -->
+                                        <div class="portfolio-details">
+                                            <a href="#">
+                                                <h4><?php echo $row['title']; ?></h4>
+                                                <span><?php echo $row['cat']; ?></span>
+                                            </a>
+                                            <a href="#" class="like-link"><i class="icon-heart-1"></i><span>5</span></a>
+                                        </div>
+                                        <!-- End Project Details -->
+                                    </div>
                                 </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="#">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Website</span>
-                                        <span>Drawing</span>
-                                    </a>
-                                    <a href="#" class="like-link"><i class="icon-heart-1"></i><span>5</span></a>
+                                <!-- End Project Item -->
+                    <?php   }else if($row['type'] == 'img'){ ?>  
+                                <!-- Start Project Item -->
+                                <div class="portfolio-item item">
+                                    <div class="portfolio-border">
+                                        <!-- Start Project Thumb -->
+                                        <div class="portfolio-thumb">
+                                            <a class="lightbox" title="<?php echo $row['title']; ?>" href="<?php echo base_url(); ?>admin/uploads/<?php echo $row['image']; ?>">
+                                                <div class="thumb-overlay"><i class="icon-resize-full"></i></div>
+                                                <img alt="" src="<?php echo base_url(); ?>admin/uploads/<?php echo $row['image']; ?>">
+                                            </a>
+                                        </div>
+                                        <!-- End Project Thumb -->
+                                        <!-- Start Project Details -->
+                                        <div class="portfolio-details">
+                                            <a href="#">
+                                            <h4><?php echo $row['title']; ?></h4>
+                                                <span><?php echo $row['cat']; ?></span>
+                                            </a>
+                                            <a href="#" class="like-link"><i class="icon-heart-1"></i><span>12</span></a>
+                                        </div>
+                                        <!-- End Project Details -->
+                                    </div>
                                 </div>
-                                <!-- End Project Details -->
-                            </div>
-                        </div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                            <div class="portfolio-border">
-                                <!-- Start Project Thumb -->
-                                <div class="portfolio-thumb">
-                                    <a class="lightbox" title="This is an image title" href="<?php echo base_url(); ?>Assets/images/portfolio-big-01.jpeg">
-                                        <div class="thumb-overlay"><i class="icon-resize-full"></i></div>
-                                        <img alt="" src="<?php echo base_url(); ?>Assets/images/portfolio-02.jpeg">
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="#">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Logo</span>
-                                        <span>Animation</span>
-                                    </a>
-                                    <a href="#" class="like-link"><i class="icon-heart-1"></i><span>12</span></a>
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                        </div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                            <div class="portfolio-border">
-                                <!-- Start Project Thumb -->
-                                <div class="portfolio-thumb">
-                                    <a href="#">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="<?php echo base_url(); ?>Assets/images/portfolio-06.jpeg">
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="#">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Animation</span>
-                                    </a>
-                                    <a href="#" class="like-link"><i class="icon-heart-1"></i><span>2</span></a>
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                        </div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                            <div class="portfolio-border">
-                                <!-- Start Project Thumb -->
-                                <div class="portfolio-thumb">
-                                    <a class="lightbox" title="This is an image title" href="<?php echo base_url(); ?>Assets/images/portfolio-big-03.jpeg">
-                                        <div class="thumb-overlay"><i class="icon-resize-full"></i></div>
-                                        <img alt="" src="<?php echo base_url(); ?>Assets/images/portfolio-07.jpeg">
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="#">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Website</span>
-                                    </a>
-                                    <a href="#" class="like-link"><i class="icon-heart-1"></i><span>9</span></a>
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                        </div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                            <div class="portfolio-border">
-                                <!-- Start Project Thumb -->
-                                <div class="portfolio-thumb">
-                                    <a href="#">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="<?php echo base_url(); ?>Assets/images/portfolio-08.jpeg">
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="#">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Ilustration</span>
-                                        <span>Animation</span>
-                                    </a>
-                                    <a href="#" class="like-link"><i class="icon-heart-1"></i><span>12</span></a>
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                        </div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                            <div class="portfolio-border">
-                                <!-- Start Project Thumb -->
-                                <div class="portfolio-thumb">
-                                    <a href="#">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="<?php echo base_url(); ?>Assets/images/portfolio-03.jpeg">
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="#">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Drawing</span>
-                                    </a>
-                                    <a href="#" class="like-link"><i class="icon-heart-1"></i><span>4</span></a>
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                        </div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                            <div class="portfolio-border">
-                                <!-- Start Project Thumb -->
-                                <div class="portfolio-thumb">
-                                    <a href="#">
-                                        <div class="thumb-overlay"><i class="icon-link-1"></i></div>
-                                        <img alt="" src="<?php echo base_url(); ?>Assets/images/portfolio-04.jpeg">
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="#">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Website</span>
-                                        <span>Ilustration</span>
-                                    </a>
-                                    <a href="#" class="like-link"><i class="icon-heart-1"></i><span>23</span></a>
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                        </div>
-                        <!-- End Project Item -->
-                        
-                        <!-- Start Project Item -->
-                        <div class="portfolio-item item">
-                            <div class="portfolio-border">
-                                <!-- Start Project Thumb -->
-                                <div class="portfolio-thumb">
-                                    <a class="lightbox" title="This is an image title" href="<?php echo base_url(); ?>Assets/images/portfolio-big-02.jpeg">
-                                        <div class="thumb-overlay"><i class="icon-resize-full"></i></div>
-                                        <img alt="" src="<?php echo base_url(); ?>Assets/images/portfolio-05.jpeg">
-                                    </a>
-                                </div>
-                                <!-- End Project Thumb -->
-                                <!-- Start Project Details -->
-                                <div class="portfolio-details">
-                                    <a href="#">
-                                        <h4>Lorem Ipsum Dolor</h4>
-                                        <span>Logo</span>
-                                        <span>Drawing</span>
-                                    </a>
-                                    <a href="#" class="like-link"><i class="icon-heart-1"></i><span>1</span></a>
-                                </div>
-                                <!-- End Project Details -->
-                            </div>
-                        </div>
-                        <!-- End Project Item -->
-                        
-                    </div>
+                                <!-- End Project Item -->
+                    <?php   } 
+                            endforeach;
+                    } ?>
+                       
+                     </div>
                 </div>
                 <!-- End Recent Projects Carousel -->
                 
@@ -534,7 +416,7 @@
                 <div class="hr1" style="margin-bottom:35px;"></div>
                 
                 <!-- Link To Portfolio -->
-                <div class="text-center"><a href="#" class="btn-system btn-large border-btn"><i class="icon-brush"></i> View Full Portfolio</a></div>
+                <div class="text-center"><a href="<?php echo base_url('Portfolio'); ?>" class="btn-system btn-large border-btn"><i class="icon-brush"></i> View Full Portfolio</a></div>
                 
         </div>
         <!-- End Full Width Section 5 -->
@@ -562,47 +444,12 @@
                         <h4 class="classic-title"><span>Our Happy Clients</span></h4>
                         
                         <div class="clients-carousel custom-carousel touch-carousel" data-appeared-items="5">
-                        
-                            <!-- Client 1 -->
-                            <div class="client-item item">
-                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c1.png" alt=""></a>
-                            </div>
-                            
-                            <!-- Client 2 -->
-                            <div class="client-item item">
-                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c2.png" alt=""></a>
-                            </div>
-                            
-                            <!-- Client 3 -->
-                            <div class="client-item item">
-                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c3.png" alt=""></a>
-                            </div>
-                            
-                            <!-- Client 4 -->
-                            <div class="client-item item">
-                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c4.png" alt=""></a>
-                            </div>
-                            
-                            <!-- Client 5 -->
-                            <div class="client-item item">
-                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c5.png" alt=""></a>
-                            </div>
-                            
-                            <!-- Client 6 -->
-                            <div class="client-item item">
-                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c6.png" alt=""></a>
-                            </div>
-                            
-                            <!-- Client 7 -->
-                            <div class="client-item item">
-                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c7.png" alt=""></a>
-                            </div>
-                            
-                            <!-- Client 8 -->
-                            <div class="client-item item">
-                                <a href="#"><img src="<?php echo base_url(); ?>Assets/images/clients/c8.png" alt=""></a>
-                            </div>
-                            
+                            <?php if(count($clients) > 0){ foreach($clients as $row): ?>
+                                <!-- Client -->
+                                <div class="client-item item">
+                                    <a href="#"><img src="<?php echo base_url(); ?>admin/uploads/<?php echo $row['image']; ?>" alt="<?php echo $row['title']; ?>"></a>
+                                </div>
+                            <?php  endforeach; } ?>
                             
                         </div>
                     </div>
@@ -653,12 +500,12 @@
 <script type="text/javascript" src="<?php echo base_url(); ?>Assets/js/moment.min.js"></script>
 <script>
 var base_url = '<?php echo base_url(); ?>';
-var newsArray = [];
-$(document).ready(function(){
-    if($(".news_post_small_title").length>0){
-        $(".news_post_small_title").eq(0).trigger("click");
-    }
+var banners = <?php echo json_encode($banners); ?>;
 
+var newsArray = [];
+
+$(document).ready(function(){
+    
     $('.news_post_small_title').each((k,v)=>{
         if(newsArray.indexOf($(v).attr('data-id')) === -1){
             newsArray.push($(v).attr('data-id'));
@@ -671,42 +518,30 @@ $(document).ready(function(){
 var curNewsIndex = -1;
 
 function getNews(id){
-    $.ajax({
-        url: '<?php echo site_url();?>Home/getNews',
-        type: 'POST',
-        data: {
-            id: id
-        },
-        dataType: "json",
-        beforeSend: function () {
-            //console.log("Emptying");
-        },
-        success: function (response) {
-            var data_st = response.data;
-            $("#postImg").attr('src',base_url+'admin/uploads/'+data_st.image);
-            
-            $("#postTitle").text(data_st.title);
+    
+    if(banners.length > 0){
+        $.each(banners,function(k,v){
 
-            $(".news_post_small_title").css('color','#384158');
-            
-            $("#post"+id).css('color','#00afd1');
+            if(v.id == id){
 
-            $("#postDesc").text(data_st.description);
-            $("#postDate").text(moment(data_st.publish_date).format('LL'));
-            $("#postReadmore").attr('href',base_url+'Home/NewsDetail/'+data_st.id);
-            $("#postTitle").attr('href',base_url+'Home/NewsDetail/'+data_st.id);
-        },
-        complete: function(data_st)
-        {
-            
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            // Some code to debbug e.g.:               
-            console.log(jqXHR);
-            console.log(textStatus);
-            console.log(errorThrown);
-        }
-    });
+                var data_st = v;
+                $("#postImg").attr('src',base_url+'admin/uploads/'+data_st.image);
+                
+                $("#postTitle").text(data_st.title);
+
+                $(".news_post_small_title").css('color','#384158');
+                
+                $("#post"+id).css('color','#00afd1');
+
+                $("#postDesc").text(data_st.description);
+                $("#postDate").text(moment(data_st.publish_date).format('LL'));
+                $("#postReadmore").attr('href',base_url+'News/'+data_st.id);
+                $("#postTitle").attr('href',base_url+'News/'+data_st.id);
+                
+            }
+        });
+    }
+    
 }
 
 </script>
@@ -719,7 +554,7 @@ function newsSticker(){
     $('.newsTicker').easyTicker({
         direction: 'up',
         visible: 5,
-        interval: 10000,
+        interval: 5000,
         easing: 'swing'
     });
 
@@ -729,7 +564,7 @@ function newsSticker(){
             curNewsIndex = 0;
         }
         getNews(newsArray[curNewsIndex]);   // set new news item into the ticker
-    }, 10000);
+    }, 5000);
 }
 </script>
 

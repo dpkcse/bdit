@@ -21,6 +21,8 @@ class Contact extends CI_Controller {
 	public function index()
 	{
 		$this->data['url'] = 'contact';
-		$this->load->view('contact',$this->data);
+		$this->data['services'] = $this->db->get_where('services',array('status =' => '0'))->result_array();
+        $this->load->view('contact',$this->data);
+		
 	}
 }
