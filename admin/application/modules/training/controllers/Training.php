@@ -54,9 +54,9 @@ class Training extends Web_Controller
                     
             /* Load form validation library */ 
             $this->load->library('form_validation');
-
+            $sessionData = $this->session->userdata('admin_logged_in');
             if($type == 'instructor'){
-                $sessionData = $this->session->userdata('admin_logged_in');
+
                 /* Set validation rule for name field in the form */ 
                 $this->form_validation->set_rules('name', 'Name', 'required');
                 $this->form_validation->set_rules('email', 'Email', 'required');
@@ -66,8 +66,7 @@ class Training extends Web_Controller
                 if ($this->form_validation->run() == FALSE) { 
                     $this->session->set_flashdata('success', 'Required feild(s) data missing');
                     redirect(base_url() . 'Instructor', 'refresh');
-                } 
-                else { 
+                } else { 
                     $inputInsertData= array(
                         'name' => $this->input->post('name'),
                         'email' => $this->input->post('email'),
@@ -78,6 +77,31 @@ class Training extends Web_Controller
                     $this->m_training->insertData('instructor',$inputInsertData);
                     $this->session->set_flashdata('success', 'Data Saved Successfully');
                     redirect(base_url() . 'Instructor', 'refresh');
+                }
+            }else if($type == 'course'){
+                if (!is_dir("./uploads/course/")) {
+                    mkdir('./uploads/course/', 0777, TRUE);
+                }
+    
+                $attachment = $_FILES["fileinput"]["tmp_name"];
+                $attachment_path = time() . $_FILES["fileinput"]["name"];
+    
+                if (is_uploaded_file($attachment)) {
+                    if (move_uploaded_file($attachment, './uploads/course/' . $attachment_path)) {
+                        $inputInsertData= array(
+                            'title' => $this->input->post('coursetitle'),
+                            'category' => $this->input->post('cat'),
+                            'detail' => $this->input->post('courseintro'),
+                            'img ' => $attachment_path,
+                            'createdby ' => $sessionData['user_id']
+                        );
+                        $insertedid = $this->m_training->insertData('course',$inputInsertData);
+                        $this->session->set_flashdata('success', 'Data Save Successfully');
+                        redirect(base_url() . 'Course', 'refresh');
+                    }else{
+                        $this->session->set_flashdata('error', $this->upload->display_errors());
+                        redirect(base_url() . 'Course', 'refresh');
+                    }
                 }
             }
             
@@ -116,6 +140,41 @@ class Training extends Web_Controller
                         $this->session->set_flashdata('msg', 'Data Update Successfully');
                         redirect(base_url() . 'Instructor', 'refresh');
                     }
+                }else if($type == 'course' ){
+                    $attachment = $_FILES["fileinput"]["tmp_name"];
+                    $attachment_path = time() . $_FILES["fileinput"]["name"];
+
+                    if($attachment != ''){
+                        if (is_uploaded_file($attachment)) {
+                            if (move_uploaded_file($attachment, './uploads/course/' . $attachment_path)) {
+                                $inputInsertData= array(
+                                    'title' => $this->input->post('title'),
+                                    'category' => $this->input->post('cat'),
+                                    'detail' => $this->input->post('detail'),
+                                    'img ' => $attachment_path
+                                );
+
+                                $this->db->where('id', $targetid);
+                                $this->db->update('course', $inputInsertData);
+                                $this->session->set_flashdata('msg', 'Data Update Successfully');
+                                redirect(base_url() . 'Course', 'refresh');
+                                
+                            }else{
+                                $this->session->set_flashdata('error', $this->upload->display_errors());
+                                redirect(base_url() . 'Course', 'refresh');
+                            }
+                        }
+                    }else{
+                        $inputInsertData= array(
+                            'title' => $this->input->post('title'),
+                            'category' => $this->input->post('cat'),
+                            'detail' => $this->input->post('detail')
+                        );
+                        $this->db->where('id', $targetid);
+                        $this->db->update('course', $inputInsertData);
+                        $this->session->set_flashdata('msg', 'Data Update Successfully');
+                        redirect(base_url() . 'Course', 'refresh');
+                    }
                 }
             }else if($action == 'do_delete'){
                 if($type == 'instructor'){
@@ -123,6 +182,11 @@ class Training extends Web_Controller
                     $this->db->delete('instructor');
                     $this->session->set_flashdata('msg', 'Data Delete Successfully');
                     redirect(base_url() . 'Instructor', 'refresh');
+                }else if($type == 'course'){
+                    $this->db->where('id', $targetid);
+                    $this->db->delete('course');
+                    $this->session->set_flashdata('msg', 'Data Delete Successfully');
+                    redirect(base_url() . 'Course', 'refresh');
                 }
             }
             

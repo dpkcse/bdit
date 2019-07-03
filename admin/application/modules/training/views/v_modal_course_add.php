@@ -8,7 +8,7 @@
             	</div>
             </div>
 			<div class="panel-body">
-				<form action="<?php echo site_url();?>Course/save/course" method="POST" name="employeedetail" id="employeedetail" class="employeedetail" >
+				<form action="<?php echo site_url();?>Course/save/course" method="POST" name="employeedetail" id="employeedetail" class="employeedetail"  enctype="multipart/form-data" >
                     <div class="form-group">
 						<label for="field-1" class="col-sm-3 control-label"><?php echo 'Course Category';?></label>
                         <div class="col-sm-8">

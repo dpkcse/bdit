@@ -38,7 +38,7 @@ foreach ( $edit_data as $row):
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-5">
-                            <button type="submit" class="btn btn-info"><?php echo "Edit Employee";?></button>
+                            <button type="submit" class="btn btn-info"><?php echo "Edit Instructor";?></button>
                         </div>
                     </div>
                 <?php echo form_close();?>
