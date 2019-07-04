@@ -27,4 +27,14 @@ class M_training extends CI_Model
     {
         return  $this->db->get_where($type,array('id'=>$type_id))->row()->$field;    
     }
+
+    function deletefrom($table, $q){
+		$this->db->delete($table, $q);
+		if($this->db->affected_rows() > 0){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
 } 

@@ -46,6 +46,14 @@ class Training extends Web_Controller
         $this->load->view('training/v_course', $this->data);
     }
 
+    public function batch()
+    {
+        $this->data['title'] = 'Batch';
+        $this->data['message'] = 'Batch';
+        $this->data['batch'] = $this->db->get('batch')->result_array();
+        $this->load->view('training/v_batch', $this->data);
+    }
+
     public function save($type = null){
         if ($this->session->userdata('admin_logged_in')) {
             $this->setOutputMode(NORMAL);
@@ -102,6 +110,86 @@ class Training extends Web_Controller
                         $this->session->set_flashdata('error', $this->upload->display_errors());
                         redirect(base_url() . 'Course', 'refresh');
                     }
+                }
+            }else if($type == 'outline'){
+                /* Set validation rule for name field in the form */ 
+                $this->form_validation->set_rules('course_id', 'Course ID', 'required');
+                $courseOutline = $this->input->post('courseOutline');
+                
+                $currrentDate = date('Y-m-d H:i:s');
+                if ($this->form_validation->run() == FALSE) { 
+                    $this->session->set_flashdata('success', 'Required feild(s) data missing');
+                    redirect(base_url() . 'Course', 'refresh');
+                } else { 
+                    $this->m_training->deletefrom("course_outline", array('course_id'=>$this->input->post('course_id')));
+                    if ($courseOutline != "") {
+	                	foreach ($courseOutline as $key => $value) {
+		                	$inputInsertData= array(
+                                'course_id' => $this->input->post('course_id'),
+                                'detail' =>  $value
+                            );
+                            $this->m_training->insertData('course_outline',$inputInsertData);
+		                }
+                    }
+                    
+                    $this->session->set_flashdata('success', 'Data Saved Successfully');
+                    redirect(base_url() . 'Course', 'refresh');
+                }
+            }else if($type == 'batch'){
+                /* Set validation rule for name field in the form */ 
+                $this->form_validation->set_rules('course_title', 'Course Title', 'required');
+                $this->form_validation->set_rules('instructor', 'Instructor', 'required');
+                $this->form_validation->set_rules('duration', 'Duration', 'required');
+                $this->form_validation->set_rules('start_date', 'Start Date', 'required');
+                $this->form_validation->set_rules('end_date', 'End Date', 'required');
+                $this->form_validation->set_rules('session', 'Session', 'required');
+                $this->form_validation->set_rules('total_seat', 'Total Seat', 'required');
+                
+                $currrentDate = date('Y-m-d H:i:s');
+                
+                if ($this->form_validation->run() == FALSE) { 
+                    $this->session->set_flashdata('success', 'Required feild(s) data missing');
+                    redirect(base_url() . 'Batch', 'refresh');
+                } else { 
+                    $batchtitle = 'BITI-'.date('Y').'-'.$this->input->post('course_title').'-'.rand(10,199);
+                    $inputInsertData= array(
+                        'title' => $batchtitle,
+                        'course_id' => $this->input->post('course_title'),
+                        'total_seat' => $this->input->post('total_seat'),
+                        'duration' => $this->input->post('duration'),
+                        'session' => $this->input->post('session'),
+                        'start_at' => $this->input->post('start_date'),
+                        'end_at' => $this->input->post('end_date'),
+                        'instructor' => $this->input->post('instructor'),
+                        'created_by' => $sessionData['user_id']
+                    );
+        
+                    $this->m_training->insertData('batch',$inputInsertData);
+                    $this->session->set_flashdata('success', 'Data Saved Successfully');
+                    redirect(base_url() . 'Batch', 'refresh');
+                }
+            }else if($type == 'student'){
+
+                /* Set validation rule for name field in the form */ 
+                $this->form_validation->set_rules('name', 'Name', 'required');
+                $this->form_validation->set_rules('email', 'Email', 'required');
+                $this->form_validation->set_rules('phone', 'Phone', 'required');
+                
+                $currrentDate = date('Y-m-d H:i:s');
+                if ($this->form_validation->run() == FALSE) { 
+                    $this->session->set_flashdata('success', 'Required feild(s) data missing');
+                    redirect(base_url() . 'Student', 'refresh');
+                } else { 
+                    $inputInsertData= array(
+                        'name' => $this->input->post('name'),
+                        'email' => $this->input->post('email'),
+                        'mobile' => $this->input->post('phone'),
+                        'created_by' => $sessionData['user_id']
+                    );
+        
+                    $this->m_training->insertData('student',$inputInsertData);
+                    $this->session->set_flashdata('success', 'Data Saved Successfully');
+                    redirect(base_url() . 'Student', 'refresh');
                 }
             }
             
@@ -175,6 +263,60 @@ class Training extends Web_Controller
                         $this->session->set_flashdata('msg', 'Data Update Successfully');
                         redirect(base_url() . 'Course', 'refresh');
                     }
+                }else if($type == 'student'){
+                    /* Set validation rule for name field in the form */ 
+                    $this->form_validation->set_rules('name', 'Name', 'required');
+                    $this->form_validation->set_rules('email', 'Email', 'required');
+                    $this->form_validation->set_rules('phone', 'Phone', 'required');
+                    
+                    $currrentDate = date('Y-m-d H:i:s');
+                    if ($this->form_validation->run() == FALSE) { 
+                        $this->session->set_flashdata('success', 'Required feild(s) data missing');
+                        redirect(base_url() . 'Student', 'refresh');
+                    } 
+                    else { 
+                        $inputInsertData= array(
+                            'name' => $this->input->post('name'),
+                            'email' => $this->input->post('email'),
+                            'mobile' => $this->input->post('phone')
+                        );
+                        $this->db->where('id', $targetid);
+                        $this->db->update('student', $inputInsertData);
+                        $this->session->set_flashdata('msg', 'Data Update Successfully');
+                        redirect(base_url() . 'Student', 'refresh');
+                    }
+                }else if($type == 'batch'){
+                     /* Set validation rule for name field in the form */ 
+                    $this->form_validation->set_rules('course_title', 'Course Title', 'required');
+                    $this->form_validation->set_rules('instructor', 'Instructor', 'required');
+                    $this->form_validation->set_rules('duration', 'Duration', 'required');
+                    $this->form_validation->set_rules('start_date', 'Start Date', 'required');
+                    $this->form_validation->set_rules('end_date', 'End Date', 'required');
+                    $this->form_validation->set_rules('session', 'Session', 'required');
+                    $this->form_validation->set_rules('total_seat', 'Total Seat', 'required');
+                    
+                    $currrentDate = date('Y-m-d H:i:s');
+                    
+                    if ($this->form_validation->run() == FALSE) { 
+                        $this->session->set_flashdata('success', 'Required feild(s) data missing');
+                        redirect(base_url() . 'Batch', 'refresh');
+                    } else { 
+                        $inputInsertData= array(
+                            'title' => $batchtitle,
+                            'course_id' => $this->input->post('course_title'),
+                            'total_seat' => $this->input->post('total_seat'),
+                            'duration' => $this->input->post('duration'),
+                            'session' => $this->input->post('session'),
+                            'start_at' => $this->input->post('start_date'),
+                            'end_at' => $this->input->post('end_date'),
+                            'instructor' => $this->input->post('instructor')
+                        );
+
+                        $this->db->where('id', $targetid);
+                        $this->db->update('batch', $inputInsertData);
+                        $this->session->set_flashdata('msg', 'Data Update Successfully');
+                        redirect(base_url() . 'Batch', 'refresh');
+                    }
                 }
             }else if($action == 'do_delete'){
                 if($type == 'instructor'){
@@ -187,6 +329,16 @@ class Training extends Web_Controller
                     $this->db->delete('course');
                     $this->session->set_flashdata('msg', 'Data Delete Successfully');
                     redirect(base_url() . 'Course', 'refresh');
+                }else if($type == 'student'){
+                    $this->db->where('id', $targetid);
+                    $this->db->delete('student');
+                    $this->session->set_flashdata('msg', 'Data Delete Successfully');
+                    redirect(base_url() . 'Student', 'refresh');
+                }else if($type == 'batch'){
+                    $this->db->where('id', $targetid);
+                    $this->db->delete('batch');
+                    $this->session->set_flashdata('msg', 'Data Delete Successfully');
+                    redirect(base_url() . 'Batch', 'refresh');
                 }
             }
             

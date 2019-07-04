@@ -74,15 +74,8 @@ class M_project extends CI_Model
 			return true;
 		}
 	}
-	function deletefrom($table, $q){
-		$this->db->delete($table, $q);
-		if($this->db->affected_rows() > 0){
-			return true;
-		}
-		else{
-			return false;
-		}
-	}
+
+	
 
 	function count($table,$select){
 		$this->db->select($select);
