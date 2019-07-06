@@ -64,7 +64,12 @@ class Training extends Web_Controller
             $this->load->library('form_validation');
             $sessionData = $this->session->userdata('admin_logged_in');
             if($type == 'instructor'){
-
+                if (!is_dir("./uploads/instructor/")) {
+                    mkdir('./uploads/instructor/', 0777, TRUE);
+                }
+    
+                $attachment = $_FILES["fileinput"]["tmp_name"];
+                $attachment_path = time() . $_FILES["fileinput"]["name"];
                 /* Set validation rule for name field in the form */ 
                 $this->form_validation->set_rules('name', 'Name', 'required');
                 $this->form_validation->set_rules('email', 'Email', 'required');
@@ -75,16 +80,26 @@ class Training extends Web_Controller
                     $this->session->set_flashdata('success', 'Required feild(s) data missing');
                     redirect(base_url() . 'Instructor', 'refresh');
                 } else { 
-                    $inputInsertData= array(
-                        'name' => $this->input->post('name'),
-                        'email' => $this->input->post('email'),
-                        'mobile' => $this->input->post('phone'),
-                        'created_by' => $sessionData['user_id']
-                    );
-        
-                    $this->m_training->insertData('instructor',$inputInsertData);
-                    $this->session->set_flashdata('success', 'Data Saved Successfully');
-                    redirect(base_url() . 'Instructor', 'refresh');
+                    if (is_uploaded_file($attachment)) {
+                        if (move_uploaded_file($attachment, './uploads/instructor/' . $attachment_path)) {
+                            $inputInsertData= array(
+                                'name' => $this->input->post('name'),
+                                'email' => $this->input->post('email'),
+                                'mobile' => $this->input->post('phone'),
+                                'created_by' => $sessionData['user_id'],
+                                'detail' => $this->input->post('detail'),
+                                'img ' => $attachment_path,
+                            );
+                
+                            $this->m_training->insertData('instructor',$inputInsertData);
+                            $this->session->set_flashdata('success', 'Data Saved Successfully');
+                            redirect(base_url() . 'Instructor', 'refresh');
+
+                        }else{
+                            $this->session->set_flashdata('error', $this->upload->display_errors());
+                            redirect(base_url() . 'Course', 'refresh');
+                        }
+                    }
                 }
             }else if($type == 'course'){
                 if (!is_dir("./uploads/course/")) {

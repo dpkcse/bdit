@@ -8,7 +8,7 @@
             	</div>
             </div>
 			<div class="panel-body">
-				<form action="<?php echo site_url();?>Instructor/save/instructor" method="POST" name="employeedetail" id="employeedetail" class="employeedetail" >
+				<form action="<?php echo site_url();?>Instructor/save/instructor" method="POST" name="employeedetail" id="employeedetail" class="employeedetail" enctype="multipart/form-data">
 		    		<div class="form-group">
 						<label for="field-1" class="col-sm-3 control-label"><?php echo 'Name';?></label>
                         <div class="col-sm-8">
@@ -22,11 +22,26 @@
 							<input type="email" class="form-control forceMargin" id="email" name="email"  value="" required>
 						</div>
 					</div>
+
 					<div class="form-group">
 						<label for="field-1" class="col-sm-3 control-label"><?php echo 'Phone';?></label>
                         <div class="col-sm-8">
 							<input type="text" class="form-control forceMargin" id="phone" name="phone"  value="" required>
 						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="fileinput" class="col-sm-3 control-label">Instructor Image (Passport Size)</label>
+						<div class="col-sm-8">
+							<input type="file" class="form-control" id="fileinput" name="fileinput" accept="image/*" required/>
+						</div> 
+					</div>
+
+					<div class="form-group">
+						<label for="field-2" class="col-sm-3 control-label"><?php echo 'Detail';?></label>
+						<div class="col-sm-8">
+							<textarea class="form-control textarea" id="detail" name="detail"></textarea>
+						</div> 
 					</div>
 				
 					<div class="form-group">
@@ -61,4 +76,14 @@
 			xhr.abort();
 		}
 	}
+</script>
+<!-- bootstrap wysihtml5 - text editor -->
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+<!-- Bootstrap WYSIHTML5 -->
+<script src="<?php echo base_url(); ?>assets/vendor/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script>
+  $(function () {
+    //bootstrap WYSIHTML5 - text editor
+    $('.textarea').wysihtml5()
+  })
 </script>

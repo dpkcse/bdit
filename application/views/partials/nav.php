@@ -37,7 +37,8 @@
                 <li>
                     <a href="<?php echo base_url(); ?>Course" class="<?php echo ($url == 'course' ? 'active':''); ?>">Services</a>
                     <ul class="dropdown">
-                        <li><a href="<?php echo base_url(); ?>Course/ICT_Training">ICT Training</a></li>
+                        <li><a href="<?php echo base_url(); ?>Course/ICT_Training">Training</a></li>
+                        <li><a href="<?php echo base_url(); ?>Course/Instructor">Instructor</a></li>
                         <li><a href="<?php echo base_url(); ?>">Higher Education – ATHE</a></li>
                         <li><a href="<?php echo base_url(); ?>">BITI Contact Centre</a></li>
                         <li><a href="<?php echo base_url(); ?>">BITI Security System</a></li>
