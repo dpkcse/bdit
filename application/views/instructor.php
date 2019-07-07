@@ -42,53 +42,26 @@
             <div class="page-content">
                 <h4 class="classic-title"><span>Our Instructors</span></h4>
                 <div class="profile-users clearfix">
-                    <div class="itemdiv memberdiv">
-                        <div class="inline pos-rel">
-                            <div class="user">
-                                <a href="#">
-                                    <img src="http://bootdey.com/img/Content/avatar/avatar6.png" alt="Bob Doe's avatar">
-                                </a>
-                            </div>
-
-                            <div class="body">
-                                <div class="name">
-                                    <a href="#">
-                                        <span class="user-status status-online"></span>
-                                        Bob Doe
+                    <?php if(count($instructors) > 0){ foreach($instructors as $row): ?>
+                        <div class="itemdiv memberdiv">
+                            <div class="inline pos-rel">
+                                <div class="user">
+                                    <a href="<?php echo base_url('Course/instructor_s/'.$row['id']); ?>">
+                                    <img src="<?php echo base_url(); ?>admin/uploads/instructor/<?php echo $row['img']; ?>" alt="<?php echo $row['name']; ?>" style="width: 64px; height: 64px;">
                                     </a>
                                 </div>
-                            </div>
 
-                            <div class="popover">
-                                <div class="arrow"></div>
-
-                                <div class="popover-content">
-                                    <div class="bolder">Content Editor</div>
-
-                                    <div class="time">
-                                        <i class="ace-icon fa fa-clock-o middle bigger-120 orange"></i>
-                                        <span class="green"> 20 mins ago </span>
-                                    </div>
-
-                                    <div class="hr dotted hr-8"></div>
-
-                                    <div class="tools action-buttons">
-                                        <a href="#">
-                                            <i class="ace-icon fa fa-facebook-square blue bigger-150"></i>
-                                        </a>
-
-                                        <a href="#">
-                                            <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-                                        </a>
-
-                                        <a href="#">
-                                            <i class="ace-icon fa fa-google-plus-square red bigger-150"></i>
+                                <div class="body">
+                                    <div class="name">
+                                        <a href="<?php echo base_url('Course/instructor_s/'.$row['id']); ?>">
+                                            <span class="user-status status-online"></span>
+                                            <?php echo $row['name']; ?>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <?php  endforeach; } ?>
                 </div>
                 <!-- Divider -->
                 <div class="hr1" style="margin-bottom:50px;"></div>

@@ -233,16 +233,44 @@ class Training extends Web_Controller
                         redirect(base_url() . 'Instructor', 'refresh');
                     } 
                     else { 
-                        $inputInsertData= array(
-                            'name' => $this->input->post('name'),
-                            'email' => $this->input->post('email'),
-                            'mobile' => $this->input->post('phone')
-                        );
-                        $this->db->where('id', $targetid);
-                        $this->db->update('instructor', $inputInsertData);
-                        $this->session->set_flashdata('msg', 'Data Update Successfully');
-                        redirect(base_url() . 'Instructor', 'refresh');
+                        $attachment = $_FILES["fileinput"]["tmp_name"];
+                        $attachment_path = time() . $_FILES["fileinput"]["name"];
+
+                        if($attachment != ''){
+                            if (is_uploaded_file($attachment)) {
+                                if (move_uploaded_file($attachment, './uploads/instructor/' . $attachment_path)) {
+                                    $inputInsertData= array(
+                                        'name' => $this->input->post('name'),
+                                        'email' => $this->input->post('email'),
+                                        'mobile' => $this->input->post('phone'),
+                                        'detail' => $this->input->post('detail'),
+                                        'img ' => $attachment_path
+                                    );
+    
+                                    $this->db->where('id', $targetid);
+                                    $this->db->update('instructor', $inputInsertData);
+                                    $this->session->set_flashdata('msg', 'Data Update Successfully');
+                                    redirect(base_url() . 'Instructor', 'refresh');
+                                    
+                                }else{
+                                    $this->session->set_flashdata('error', $this->upload->display_errors());
+                                    redirect(base_url() . 'Instructor', 'refresh');
+                                }
+                            }
+                        }else{
+                            $inputInsertData= array(
+                                'name' => $this->input->post('name'),
+                                'email' => $this->input->post('email'),
+                                'mobile' => $this->input->post('phone'),
+                                'detail' => $this->input->post('detail')
+                            );
+                            $this->db->where('id', $targetid);
+                            $this->db->update('instructor', $inputInsertData);
+                            $this->session->set_flashdata('msg', 'Data Update Successfully');
+                            redirect(base_url() . 'Instructor', 'refresh');
+                        }
                     }
+
                 }else if($type == 'course' ){
                     $attachment = $_FILES["fileinput"]["tmp_name"];
                     $attachment_path = time() . $_FILES["fileinput"]["name"];

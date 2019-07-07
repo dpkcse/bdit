@@ -10435,7 +10435,7 @@ ul.course-details-meta a.enroll {
 }
 .course-text .check-list li:before {
 	content: "\f00c";
-	font-family: FontAwesome-free;
+	font-family: FontAwesome;
 	color: #fa394a;
 	font-size: 14px;
 	margin-right: 12px;

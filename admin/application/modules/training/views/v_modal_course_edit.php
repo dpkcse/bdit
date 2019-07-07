@@ -48,25 +48,25 @@ foreach ( $edit_data as $row):
                     </div>
                     
                     <div class="form-group">
-							<label for="fileinput" class="col-sm-3 control-label">Banner Image (845X450)</label>
-							<div class="col-sm-8">
-								<input type="file" class="form-control" id="fileinput" name="fileinput" accept="image/*" /> 
-							</div> 
-						</div>
-						<div class="form-group">
-							<label for="field-2" class="col-sm-3 control-label"><?php echo 'Course Intro';?></label>
-							
-							<div class="col-sm-8">
-								<textarea class="form-control textarea" id="detail" name="detail"><?php echo $row['detail']; ?></textarea>
-							</div> 
-						</div>
-                        <div class="form-group">
-							<label for="field-2" class="col-sm-3 control-label"><?php echo 'Previous imgae';?></label>
-							
-							<div class="col-sm-8">
-                                <img style="width: 150px;" src="<?php echo base_url('uploads/course/'.$row['img'])?>" />
-							</div> 
-						</div>
+                        <label for="fileinput" class="col-sm-3 control-label">Banner Image (845X450)</label>
+                        <div class="col-sm-8">
+                            <input type="file" class="form-control" id="fileinput" name="fileinput" accept="image/*" /> 
+                        </div> 
+                    </div>
+                    <div class="form-group">
+                        <label for="field-2" class="col-sm-3 control-label"><?php echo 'Course Intro';?></label>
+                        
+                        <div class="col-sm-8">
+                            <textarea class="form-control textarea" id="detail" name="detail"><?php echo $row['detail']; ?></textarea>
+                        </div> 
+                    </div>
+                    <div class="form-group">
+                        <label for="field-2" class="col-sm-3 control-label"><?php echo 'Previous imgae';?></label>
+                        
+                        <div class="col-sm-8">
+                            <img style="width: 150px;" src="<?php echo base_url('uploads/course/'.$row['img'])?>" />
+                        </div> 
+                    </div>
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-5">
                             <button type="submit" class="btn btn-info"><?php echo "Edit Course";?></button>

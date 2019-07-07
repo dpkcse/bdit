@@ -43,11 +43,10 @@ class Bdit extends CI_Model
       }
     }
 
-    function get_type_name_by_id($type,$type_id='',$field='pro_number')
+    function get_type_name_by_id($type,$type_id='',$field='')
     {
-        return  $this->db->get_where($type,array('pro_id'=>$type_id))->row()->$field;    
+        return  $this->db->get_where($type,array('id'=>$type_id))->row()->$field;    
     }
-
 
     function get_drawing_name_by_id($type,$type_id='',$field='panel_type')
     {

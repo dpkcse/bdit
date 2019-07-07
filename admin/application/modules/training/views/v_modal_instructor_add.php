@@ -31,7 +31,7 @@
 					</div>
 
 					<div class="form-group">
-						<label for="fileinput" class="col-sm-3 control-label">Instructor Image (Passport Size)</label>
+						<label for="fileinput" class="col-sm-3 control-label">Image (PP Size)</label>
 						<div class="col-sm-8">
 							<input type="file" class="form-control" id="fileinput" name="fileinput" accept="image/*" required/>
 						</div> 

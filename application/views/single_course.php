@@ -20,7 +20,7 @@
          <!-- Start Page Banner -->
          <div class="page-banner" style="height:200px;padding:40px 0; background: url(<?php echo base_url(); ?>Assets/images/innerheader.jpeg) center #f9f9f9;">
             <div class="inner-header-caption">
-               <h1>Course Detail for ICT Training</h1>
+               <h1>Course Detail for <?php echo $course[0]['title']; ?></h1>
                <ul class="breadcrumb">
                   <li><a href="index-1.html"><i class="fa fa-home"></i> Home</a></li>
                   <li><a href="#">Course</a></li>
@@ -38,53 +38,47 @@
                      <div class="col-md-9">
                         <div class="course-detail">
                            <!--Large Image-->
-                           <div class="course-large-img"> <img src="<?php echo base_url(); ?>Assets/images/course-full.jpeg" alt=""> </div>
+                           <div class="course-large-img"> <img src="<?php echo base_url(); ?>admin/uploads/course/<?php echo $course[0]['img'];?>" alt=""> </div>
                            <!--Large Image--> 
                            <!--Meta Tag Start-->
                            <ul class="course-details-meta">
-                              <li> <img class="pro" src="<?php echo base_url(); ?>Assets/images/avatar.png" alt=""> <strong>Instructor:</strong> John Doe </li>
-                              <li> <strong>Category:</strong> General Science </li>
-                              <li>
+                              <li> <img class="pro" src="<?php echo base_url(); ?>admin/uploads/course/<?php echo $course[0]['img'];?>" alt=""> <strong>Instructor:</strong> <?php echo $this->bdit->get_type_name_by_id('instructor',$batch[0]['instructor'],'name') ;?> </li>
+                              <li> <strong>Category:</strong> <?php echo $course[0]['category']; ?> </li>
+                              <!-- <li>
                                  <strong>Review:</strong>
                                  <div class="fc-rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                               </li>
                               <li>
                                  <strong>Price:</strong>
                                  <h4>$299.00</h4>
-                              </li>
+                              </li> -->
                               <li> <a class="enroll" href="#">Get Enroll Now</a> </li>
                            </ul>
                            <!--Meta Tag End-->
                            <div class="course-text">
-                              <h4>Bachelor’s Degree in Chemical Engineering</h4>
-                              <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                              <h4><?php echo $course[0]['title']; ?></h4>
                               <table class="course-table">
                                  <tr>
-                                    <td><span><i class="fa fa-book"></i></span> Lessons: <strong>12 Lessons</strong></td>
-                                    <td><span><i class="fa fa-clock"></i></span> Duration: <strong>02 Years</strong></td>
-                                    <td><span><i class="fa fa-flag"></i></span> Language: <strong>English</strong></td>
+                                    <td><span><i class="fa fa-book"></i></span> Duration: <strong><?php echo $batch[0]['duration'];?></strong></td>
+                                    <td><span><i class="fa fa-folder-open"></i></span> Session: <strong><?php echo $batch[0]['session'];?></strong></td>
+                                    <td><span><i class="fa fa-flag"></i></span> Tantative Start: <strong><?php echo $batch[0]['start_at'];?></strong></td>
                                  </tr>
-                                 <tr>
+                                 <!-- <tr>
                                     <td><span><i class="fa fa-users"></i></span> Seats: <strong>100 Seats (47 Rsvd)</strong></td>
                                     <td><span><i class="fa fa-calendar-alt"></i></span> Session: <strong>2018-2020</strong></td>
                                     <td><span><i class="fa fa-folder-open"></i></span> Department: <strong>ICT Training</strong></td>
-                                 </tr>
+                                 </tr> -->
                               </table>
                               <h4>Course Description & Detail</h4>
-                              <p> Morbi congue gravida pharetra. Integer ac mi placerat, luctus dui eget, cursus enim. Praesent pharetra enim ornare facilisis rhoncus. Proin luctus ante eget nunc laoreet, in fringilla eros dapibus.</p>
-                              <p> Pangolin regarding rabbit ahead dolorously soothingly ouch unbound excluding sewed best and hedgehog.Pangolin regarding rabbit ahead dolorously soothingly ouch be the unbound excluding sewed. Pangolin regarding Pangolin regarding rabbit best ahead dolorously soothingly ouch unbound excluding sewed. </p>
+                              <p> <?php echo $course[0]['detail']; ?> </p>
                               <h4>Learning Outcomes</h4>
                               <img class="pull-right" src="(<?php echo base_url(); ?>Assets/images/course-img.jpeg" alt="">
                               <ul class="check-list">
-                                 <li>Over 37 lectures and 55.5 hours of content!</li>
-                                 <li> Testing Training Included.</li>
-                                 <li>Learn Software Testing and Automation basics.</li>
-                                 <li>Practical assignments at the end of every session.</li>
-                                 <li>learning experience with live project work and examples.</li>
-                                 <li>Information packed practical training starting from basics</li>
-                                 <li>Advanced testing techniques.</li>
+                                 <?php if(count($course_outline) > 0){ foreach($course_outline as $row): ?>
+                                    <li><?php echo  $row['detail']; ?></li>
+                                 <?php endforeach; } ?>
                               </ul>
-                              <table class="time-table">
+                              <!-- <table class="time-table">
                                  <thead>
                                     <tr>
                                        <th>Days</th>
@@ -129,77 +123,31 @@
                                        <td>Symond Wolker</td>
                                     </tr>
                                  </tbody>
-                              </table>
+                              </table> -->
                            </div>
                         </div>
                         <!--Related Courses-->
                         <div class="related-courses">
                            <h3>Related Courses</h3>
                            <div class="row">
-                              <!--Course Box Start-->
-                              <div class="col-md-4">
-                                 <div class="course-grid-box">
-                                    <div class="course-thumb"> <strong class="cdeprt">ICT Training</strong> <a href="#"><i class="fa fa-link"></i></a> <img src="<?php echo base_url(); ?>Assets/images/cg2-img1.jpeg" alt=""> </div>
-                                    <div class="course-excerpt">
-                                       <div class="fc-rating"> 5.0 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                       <div class="ctxt">
-                                          <h4><a href="#">Bachelor’s Degree in ICT Training</a></h4>
-                                          <p>Ut enim ad minim veniam, nostrud exercitation laboris quis...</p>
-                                          <a href="#" class="cdetail">Course Detail</a> 
+                              <!--Course start-->
+                              <?php if(count($courses) > 0){ foreach($courses as $row): ?>
+                                 <?php if(($row['id'] != $course[0]['id']) && ($row['category'] == $course[0]['category'])){?>
+                                 <div class="col-md-3 col-sm-6">
+                                    <div class="course-grid-box">
+                                       <div class="course-thumb"> <strong class="cdeprt"><?php echo $row['category']; ?></strong> <a href="<?php echo base_url(); ?>Course/single/<?php echo $row['id']; ?>"><i class="fa fa-link"></i></a> <img src="<?php echo base_url(); ?>admin/uploads/course/<?php echo $row['img'];?>" alt=""> </div>
+                                       <div class="course-excerpt">
+                                          
+                                          <div class="ctxt">
+                                             <h4><a href="<?php echo base_url(); ?>Course/single/<?php echo $row['id']; ?>"><?php echo $row['title']; ?></a></h4>
+                                             <a href="<?php echo base_url(); ?>Course/single/<?php echo $row['id']; ?>" class="cdetail">Course Detail</a> 
+                                          </div>
                                        </div>
                                     </div>
-                                    <ul class="course-meta">
-                                       <li><i class="fa fa-book"></i> 8 Les</li>
-                                       <li><i class="fa fa-users"></i> 25Seats</li>
-                                       <li><i class="fa fa-calendar-alt"></i> 3 Mon</li>
-                                    </ul>
                                  </div>
-                              </div>
-                              <!--Course Box End-->
-                              <!--Course Box Start-->
-                              <div class="col-md-4 col-sm-6">
-                                 <div class="course-grid-box">
-                                    <div class="course-thumb"> <strong class="cdeprt">ICT Training</strong> <a href="#"><i class="fa fa-link"></i></a> <img src="<?php echo base_url(); ?>Assets/images/cg2-img2.jpeg" alt=""> </div>
-                                    <div class="course-excerpt">
-                                       <div class="fc-rating"> 5.0 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                       <div class="ctxt">
-                                          <h4><a href="#">AutoCad &amp; Interior
-                                             Sketch Designer</a>
-                                          </h4>
-                                          <p>Ut enim ad minim veniam, nostrud exercitation laboris quis...</p>
-                                          <a href="#" class="cdetail">Course Detail</a> 
-                                       </div>
-                                    </div>
-                                    <ul class="course-meta">
-                                       <li><i class="fa fa-book"></i> 8 Les</li>
-                                       <li><i class="fa fa-users"></i> 25Seats</li>
-                                       <li><i class="fa fa-calendar-alt"></i> 3 Mon</li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <!--Course Box End-->
-                              <!--Course Box Start-->
-                              <div class="col-md-4 col-sm-6">
-                                 <div class="course-grid-box">
-                                    <div class="course-thumb"> <strong class="cdeprt">ICT Training</strong> <a href="#"><i class="fa fa-link"></i></a> <img src="<?php echo base_url(); ?>Assets/images/cg2-img3.jpeg" alt=""> </div>
-                                    <div class="course-excerpt">
-                                       <div class="fc-rating"> 5.0 <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                       <div class="ctxt">
-                                          <h4><a href="#">Web &amp; Graphics
-                                             Technology</a>
-                                          </h4>
-                                          <p>Ut enim ad minim veniam, nostrud exercitation laboris quis...</p>
-                                          <a href="#" class="cdetail">Course Detail</a> 
-                                       </div>
-                                    </div>
-                                    <ul class="course-meta">
-                                       <li><i class="fa fa-book"></i> 8 Les</li>
-                                       <li><i class="fa fa-users"></i> 25Seats</li>
-                                       <li><i class="fa fa-calendar-alt"></i> 3 Mon</li>
-                                    </ul>
-                                 </div>
-                              </div>
-                              <!--Course Box End-->
+                           <?php }  endforeach; } ?>
+                              
+                              <!--Course End--> 
                            </div>
                         </div>
                      </div>
@@ -220,9 +168,9 @@
                            <div class="widget">
                               <h3>About us</h3>
                               <div class="textwidget">
-                                 <img src="<?php echo base_url(); ?>Assets/images/sideimg.jpeg" alt="">
-                                 <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                                 <h5 class="name">Albert John</h5>
+                                 <img src="<?php echo base_url(); ?>Assets/images/logo_bit200x60.png" alt="">
+                                 <h5 class="name">Bangladesh IT Institute</h5>
+                                 <p>We combine the best of technologies, processes, strategies, and our extensive industry experience to enable our clients to succeed. BITI designs, implements, and supports end-to-end IT solutions and services. Our goal is to improve performance, maximize IT investments, and, ultimately, create a competitive business advantage for our customers. Our ability to integrate Information Technology services into a flexible, total single-point-of-contact (SPOC) solution is the key element of our success. </p>
                                  <ul class="social">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -234,45 +182,19 @@
                            <!--Widget End--> 
                            <!--Widget Start-->
                            <div class="widget">
-                              <h3>Quick Links</h3>
-                              <ul class="side-quick-link">
-                                 <li> <a href="#"><i class="fa fa-graduation-cap"></i>Gradution </a> </li>
-                                 <li> <a href="#"><i class="fa fa-pencil"></i> Admission Criteria </a> </li>
-                                 <li> <a href="#"><i class="fa fa-book"></i> All Course </a> </li>
-                              </ul>
-                           </div>
-                           <!--Widget End--> 
-                           <!--Widget Start-->
-                           <div class="widget">
-                              <h3>Upcoming Events</h3>
+                              <h3>Upcoming Batch</h3>
                               <ul class="upcoming-events">
                                  <!--Event Start-->
-                                 <li>
-                                    <div class="up-top">
-                                       <div class="upedate"> Aug <strong>22</strong> </div>
-                                       <h5><a href="#">Annual meetup &amp; scholarship</a></h5>
-                                    </div>
-                                    <span><i class="fa fa-map-marker-alt"></i> Hall - A | Broklyn Audiitorium</span> 
-                                 </li>
+                                 <?php if(count($batches) > 0){ foreach($batches as $row): ?>
+                                    <li>
+                                       <div class="up-top">
+                                          <div class="upedate"> <?php echo date('d',strtotime($row['start_at'])); ?> <strong><?php echo date('m',strtotime($row['start_at'])); ?></strong> </div>
+                                          <h5><a href="<?php echo base_url(); ?>Course/single/<?php echo $row['course_id']; ?>"><?php echo $this->bdit->get_type_name_by_id('course',$course[0]['id'],'title') ;?></a></h5>
+                                       </div>
+                                       <span><i class="fa fa-map-marker-alt"></i>BD IT Institute</span> 
+                                    </li>
+                                 <?php endforeach; } ?>
                                  <!--Event End--> 
-                                 <!--Event Start-->
-                                 <li>
-                                    <div class="up-top">
-                                       <div class="upedate"> Aug <strong>22</strong> </div>
-                                       <h5><a href="#">Annual meetup &amp; scholarship</a></h5>
-                                    </div>
-                                    <span><i class="fa fa-map-marker-alt"></i> Hall - A | Broklyn Audiitorium</span> 
-                                 </li>
-                                 <!--Event End--> 
-                                 <!--Event Start-->
-                                 <li>
-                                    <div class="up-top">
-                                       <div class="upedate"> Aug <strong>22</strong> </div>
-                                       <h5><a href="#">Annual meetup &amp; scholarship</a></h5>
-                                    </div>
-                                    <span><i class="fa fa-map-marker-alt"></i> Hall - A | Broklyn Audiitorium</span> 
-                                 </li>
-                                 <!--Event End-->
                               </ul>
                            </div>
                            <!--Widget End--> 
